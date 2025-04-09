@@ -7,7 +7,7 @@
 {% block content %}
 <div class="jumbotron">
 	<div class="container">
-		<h1>Configuration</h1>
+		<h1>پیکربندی</h1>
 	</div>
 </div>
 <div class="container">
@@ -17,64 +17,64 @@
 
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1 active" href="#general" role="tab" data-toggle="tab">
-						<i class="fa fa-gear action-icon"></i>General
+						<i class="fa fa-gear action-icon"></i>عمومی
 					</a>
 				</li>
 				<!-- Appearance -->
-				<small class="section-title">Appearance</small>
+				<small class="section-title">ظاهر</small>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#logo" role="tab" data-toggle="tab">
-						<i class="fa fa-signature action-icon"></i>Logo
+						<i class="fa fa-signature action-icon"></i>لوگو
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#theme" role="tab" data-toggle="tab">
-						<i class="fa fa-brush action-icon"></i>Theme
+						<i class="fa fa-brush action-icon"></i>تم
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#localization" role="tab" data-toggle="tab">
-						<i class="fa fa-language action-icon"></i>Localization
+						<i class="fa fa-language action-icon"></i>بومی سازی
 					</a>
 				</li>
 				<!-- Access -->
 				<small class="section-title">Access</small>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#visibility" role="tab" data-toggle="tab">
-						<i class="fa fa-eye action-icon"></i>Visibility
+						<i class="fa fa-eye action-icon"></i>دید
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#ctftime" role="tab" data-toggle="tab">
-						<i class="fa fa-stopwatch action-icon"></i>Start and End Time
+						<i class="fa fa-stopwatch action-icon"></i>زمان شروع و پایان
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#pause" role="tab" data-toggle="tab">
-						<i class="fa fa-pause action-icon"></i>Pause
+						<i class="fa fa-pause action-icon"></i>توقف
 					</a>
 				</li>
 
 				<!-- Users -->
-				<small class="section-title">Users</small>
+				<small class="section-title">کاربران</small>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#accounts" role="tab" data-toggle="tab">
-						<i class="fa fa-users action-icon"></i>Accounts
+						<i class="fa fa-users action-icon"></i>حساب ها
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#brackets" role="tab" data-toggle="tab">
-						<i class="fa fa-chart-line action-icon"></i>Scoreboard Brackets
+						<i class="fa fa-chart-line action-icon"></i>براکت های تابلوی امتیاز
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#fields" role="tab" data-toggle="tab">
-						<i class="fa fa-fingerprint action-icon"></i>Custom Fields
+						<i class="fa fa-fingerprint action-icon"></i>فیلدهای سفارشی
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#registration_code" role="tab" data-toggle="tab">
-						<i class="fa fa-user-lock action-icon"></i>Registration Code
+						<i class="fa fa-user-lock action-icon"></i>کد ثبت نام
 					</a>
 				</li>
 
@@ -86,18 +86,18 @@
 				</li>
 
 				<!-- Security -->
-				<small class="section-title">Security</small>
+				<small class="section-title">امنیت</small>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#sanitize" role="tab" data-toggle="tab">
-						<i class="fa fa-shield-halved action-icon"></i>Sanitize
+						<i class="fa fa-shield-halved action-icon"></i>پاکسازی کنید
 					</a>
 				</li>
 
 				<!-- Pages -->
-				<small class="section-title">Pages</small>
+				<small class="section-title">صفحه‌ها</small>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#legal" role="tab" data-toggle="tab">
-						<i class="fa fa-scale-balanced action-icon"></i>Legal
+						<i class="fa fa-scale-balanced action-icon"></i>قانونی
 					</a>
 				</li>
 				<li class="nav-item">
@@ -107,15 +107,15 @@
 				</li>
 				
 				<!-- Integrations -->
-				<small class="section-title">Integrations</small>
+				<small class="section-title">ادغامات</small>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#email" role="tab" data-toggle="tab">
-						<i class="fa fa-envelope action-icon"></i>Email Notifications
+						<i class="fa fa-envelope action-icon"></i>اعلان های ایمیل
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#social" role="tab" data-toggle="tab">
-						<i class="fa fa-share-nodes action-icon"></i>Social Sharing
+						<i class="fa fa-share-nodes action-icon"></i>اشتراک گذاری اجتماعی
 					</a>
 				</li>
 				<li class="nav-item">
@@ -127,7 +127,7 @@
 				<!-- Plugins -->
 				{% set plugins = get_configurable_plugins() %}
 				{% if plugins %}
-					<small class="section-title">Plugins</small>
+					<small class="section-title">پلاگین‌ها</small>
 					{% for plugin in plugins %}
 						{% if plugin.config %}
 							<li class="nav-item">
@@ -146,15 +146,15 @@
 				{% endif %}
 
 				<!-- Reset -->
-				<small class="section-title">Danger zone</small>
+				<small class="section-title">منطقه خطر</small>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="#usermode" role="tab" data-toggle="tab">
-						<i class="fa fa-people-arrows action-icon"></i>User Mode
+						<i class="fa fa-people-arrows action-icon"></i>حالت کاربر
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link rounded-0 py-1" href="{{ url_for('admin.reset') }}" role="tab">
-						<i class="fa fa-trash-can action-icon"></i>Reset
+						<i class="fa fa-trash-can action-icon"></i>بازنشانی
 					</a>
 				</li>
 			</ul>
@@ -162,7 +162,7 @@
 		<div class="col-md-9">
 			{% for error in errors %}
 				<div class="alert alert-danger alert-dismissable" role="alert">
-					<span class="sr-only">Error:</span>
+					<span class="sr-only">خطا:</span>
 					{{ error }}
 					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 						<span aria-hidden="true">×</span>

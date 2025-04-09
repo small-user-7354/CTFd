@@ -1,0 +1,782 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CTFd\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-10-07 03:17-0400\n"
+"PO-Revision-Date: 2025-02-16 18:32\n"
+"Last-Translator: \n"
+"Language-Team: Persian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Crowdin-Project: CTFd\n"
+"X-Crowdin-Project-ID: 659064\n"
+"X-Crowdin-Language: ar\n"
+"X-Crowdin-File: /master/messages.pot\n"
+"X-Crowdin-File-ID: 188\n"
+"Language: fa_IR\n"
+
+#: CTFd/forms/auth.py:19 CTFd/forms/self.py:16
+#: CTFd/themes/core-beta/templates/teams/private.html:319
+#: CTFd/themes/core-beta/templates/teams/public.html:85
+msgid "User Name"
+msgstr "نام کاربری"
+
+#: CTFd/forms/auth.py:21 CTFd/forms/auth.py:53 CTFd/forms/self.py:17
+#: CTFd/forms/teams.py:203
+msgid "Email"
+msgstr "پست الکترونیکی"
+
+#: CTFd/forms/auth.py:22 CTFd/forms/auth.py:43 CTFd/forms/auth.py:60
+#: CTFd/forms/self.py:19 CTFd/forms/teams.py:204
+msgid "Password"
+msgstr "گذرواژه"
+
+#: CTFd/forms/auth.py:23 CTFd/forms/auth.py:44 CTFd/forms/auth.py:55
+#: CTFd/forms/auth.py:62 CTFd/forms/self.py:24 CTFd/forms/teams.py:127
+#: CTFd/forms/teams.py:210 CTFd/themes/core-beta/templates/challenge.html:147
+msgid "Submit"
+msgstr "ارسال"
+
+#: CTFd/forms/auth.py:39
+msgid "User Name or Email"
+msgstr "نام کاربری یا آدرس ایمیل"
+
+#: CTFd/forms/auth.py:48
+msgid "Resend Confirmation Email"
+msgstr "ارسال ایمیل تایید"
+
+#: CTFd/forms/self.py:18 CTFd/forms/users.py:155
+msgid "Language"
+msgstr "زبان"
+
+#: CTFd/forms/self.py:20
+msgid "Current Password"
+msgstr "گذرواژه کنونی"
+
+#: CTFd/forms/self.py:21 CTFd/forms/teams.py:113 CTFd/forms/teams.py:191
+#: CTFd/forms/teams.py:206 CTFd/forms/users.py:138
+#: CTFd/themes/core-beta/templates/teams/teams.html:51
+#: CTFd/themes/core-beta/templates/users/users.html:48
+msgid "Affiliation"
+msgstr "وابستگی"
+
+#: CTFd/forms/self.py:22 CTFd/forms/teams.py:119 CTFd/forms/teams.py:192
+#: CTFd/forms/teams.py:205 CTFd/forms/users.py:139
+#: CTFd/themes/core-beta/templates/teams/teams.html:50
+#: CTFd/themes/core-beta/templates/users/users.html:47
+msgid "Website"
+msgstr "وبسایت"
+
+#: CTFd/forms/self.py:23 CTFd/forms/teams.py:123 CTFd/forms/teams.py:207
+#: CTFd/themes/core-beta/templates/teams/teams.html:52
+#: CTFd/themes/core-beta/templates/users/users.html:49
+msgid "Country"
+msgstr "کشور"
+
+#: CTFd/forms/self.py:52 CTFd/themes/core-beta/templates/settings.html:225
+msgid "Expiration"
+msgstr "زمان انقضا"
+
+#: CTFd/forms/self.py:54
+msgid "Generate"
+msgstr "تولید کردن"
+
+#: CTFd/forms/setup.py:29
+msgid "Event Name"
+msgstr "نام رخداد"
+
+#: CTFd/forms/setup.py:29
+msgid "The name of your CTF event/workshop"
+msgstr "نام رویداد/کارگاه CTF شما"
+
+#: CTFd/forms/setup.py:32
+msgid "Event Description"
+msgstr "توضیح رویداد"
+
+#: CTFd/forms/setup.py:32
+msgid "Description for the CTF"
+msgstr "توضیحات برای CTF"
+
+#: CTFd/forms/setup.py:35 CTFd/forms/setup.py:36
+msgid "User Mode"
+msgstr "حالت کاربری"
+
+#: CTFd/forms/setup.py:36
+msgid "Team Mode"
+msgstr "حالت تیم"
+
+#: CTFd/forms/setup.py:38
+msgid "Controls whether users join together in teams to play (Team Mode) or play as themselves (User Mode)"
+msgstr "کنترل می کند که آیا کاربران در تیم ها برای بازی (حالت تیم) به هم می پیوندند یا به عنوان خود بازی می کنند (حالت کاربر)"
+
+#: CTFd/forms/setup.py:45
+msgid "Admin Username"
+msgstr "نام کاربری ادمین"
+
+#: CTFd/forms/setup.py:46
+msgid "Your username for the administration account"
+msgstr "نام کاربری شما برای حساب مدیریت"
+
+#: CTFd/forms/setup.py:50
+msgid "Admin Email"
+msgstr "ایمیل ادمین"
+
+#: CTFd/forms/setup.py:51
+msgid "Your email address for the administration account"
+msgstr "آدرس ایمیل شما برای حساب مدیریت"
+
+#: CTFd/forms/setup.py:55
+msgid "Admin Password"
+msgstr "گذرواژه ادمین"
+
+#: CTFd/forms/setup.py:56
+msgid "Your password for the administration account"
+msgstr "رمز ورود شما برای حساب مدیریت"
+
+#: CTFd/forms/setup.py:61
+msgid "Logo"
+msgstr "لوگو"
+
+#: CTFd/forms/setup.py:62
+msgid "Logo to use for the website instead of a CTF name. Used as the home page button. Optional."
+msgstr "آرم برای استفاده از وب سایت به جای نام CTF. به عنوان دکمه صفحه اصلی استفاده می شود. اختیاری"
+
+#: CTFd/forms/setup.py:67
+msgid "Banner"
+msgstr "بنر"
+
+#: CTFd/forms/setup.py:67
+msgid "Banner to use for the homepage. Optional."
+msgstr "بنر برای استفاده برای صفحه اصلی. اختیاری"
+
+#: CTFd/forms/setup.py:70
+msgid "Small Icon"
+msgstr "نماد کوچک"
+
+#: CTFd/forms/setup.py:71
+msgid "favicon used in user's browsers. Only PNGs accepted. Must be 32x32px. Optional."
+msgstr "Favicon در مرورگرهای کاربر استفاده می شود. فقط PNG ها پذیرفتند. باید 32x32px باشد. اختیاری"
+
+#: CTFd/forms/setup.py:76
+msgid "Theme"
+msgstr "تم"
+
+#: CTFd/forms/setup.py:77
+msgid "CTFd Theme to use. Can be changed later."
+msgstr "موضوع CTFD برای استفاده. بعداً قابل تغییر است."
+
+#: CTFd/forms/setup.py:84
+msgid "Theme Color"
+msgstr "رنگ تم"
+
+#: CTFd/forms/setup.py:85
+msgid "Color used by theme to control aesthetics. Requires theme support. Optional."
+msgstr "رنگ مورد استفاده توسط موضوع برای کنترل زیبایی شناسی. به پشتیبانی تم نیاز دارد. اختیاری"
+
+#: CTFd/forms/setup.py:91
+msgid "Verify Emails"
+msgstr "تایید ایمیل"
+
+#: CTFd/forms/setup.py:143
+msgid "Start Time"
+msgstr "زمان شروع"
+
+#: CTFd/forms/setup.py:144
+msgid "Time when your CTF is scheduled to start. Optional."
+msgstr "زمان شروع CTF شما شروع می شود. اختیاری"
+
+#: CTFd/forms/setup.py:147
+msgid "End Time"
+msgstr "زمان پایان"
+
+#: CTFd/forms/setup.py:148
+msgid "Time when your CTF is scheduled to end. Optional."
+msgstr "زمانی که CTF شما به پایان می رسد. اختیاری"
+
+#: CTFd/forms/setup.py:150
+msgid "Finish"
+msgstr "پایان"
+
+#: CTFd/forms/teams.py:76 CTFd/forms/teams.py:83 CTFd/forms/teams.py:100
+#: CTFd/forms/teams.py:202
+msgid "Team Name"
+msgstr "نام تیم"
+
+#: CTFd/forms/teams.py:77 CTFd/forms/teams.py:84
+msgid "Team Password"
+msgstr "رمز عبور تیم"
+
+#: CTFd/forms/teams.py:78 CTFd/forms/teams.py:258
+msgid "Join"
+msgstr "پیوستن"
+
+#: CTFd/forms/teams.py:85
+msgid "Create"
+msgstr "ساختن"
+
+#: CTFd/forms/teams.py:101
+msgid "Your team's public name shown to other competitors"
+msgstr "نام عمومی تیم شما به سایر رقبا نشان داده شده است"
+
+#: CTFd/forms/teams.py:104
+msgid "New Team Password"
+msgstr "گذر واژه تازه برای تیم"
+
+#: CTFd/forms/teams.py:104
+msgid "Set a new team join password"
+msgstr "یک تیم جدید را با رمز وصل کنید"
+
+#: CTFd/forms/teams.py:107
+msgid "Confirm Current Team Password"
+msgstr "رمز عبور تیم فعلی را تأیید کنید"
+
+#: CTFd/forms/teams.py:108
+msgid "Provide your current team password (or your password) to update your team's password"
+msgstr "برای به روزرسانی رمز عبور تیم های خود ، رمز عبور تیم فعلی (یا رمز عبور خود) را ارائه دهید"
+
+#: CTFd/forms/teams.py:114
+msgid "Your team's affiliation publicly shown to other competitors"
+msgstr "وابستگی تیم شما به طور عمومی به سایر رقبا نشان داده شده است"
+
+#: CTFd/forms/teams.py:120
+msgid "Your team's website publicly shown to other competitors"
+msgstr "وب سایت تیم شما به طور عمومی به سایر رقبا نشان داده شده است"
+
+#: CTFd/forms/teams.py:125
+msgid "Your team's country publicly shown to other competitors"
+msgstr "کشور تیم شما به طور عمومی به سایر رقبا نشان داده شده است"
+
+#: CTFd/forms/teams.py:165
+msgid "Team Captain"
+msgstr "کاپیتان تیم"
+
+#: CTFd/forms/teams.py:188 CTFd/forms/users.py:135
+msgid "Search Field"
+msgstr "جستجوی موضوع"
+
+#: CTFd/forms/teams.py:190 CTFd/forms/users.py:137
+#: CTFd/themes/core-beta/templates/challenge.html:183
+msgid "Name"
+msgstr "نام"
+
+#: CTFd/forms/teams.py:197 CTFd/forms/users.py:145
+msgid "Parameter"
+msgstr "پارامتر"
+
+#: CTFd/forms/teams.py:198 CTFd/forms/users.py:149
+msgid "Search"
+msgstr "جستجو"
+
+#: CTFd/forms/teams.py:208
+msgid "Hidden"
+msgstr "پنهان"
+
+#: CTFd/forms/teams.py:209
+msgid "Banned"
+msgstr "بن شده"
+
+#: CTFd/forms/teams.py:254
+msgid "Invite Link"
+msgstr "لینک دعوت"
+
+#: CTFd/forms/users.py:146
+msgid "Search for matching users"
+msgstr "جستجوی کاربران تطبیق "
+
+#: CTFd/themes/core-beta/templates/base.html:49
+msgid "Powered by CTFd"
+msgstr "طنین کوثر"
+
+#: CTFd/themes/core-beta/templates/challenge.html:11
+#: CTFd/themes/core-beta/templates/teams/private.html:375
+#: CTFd/themes/core-beta/templates/teams/public.html:141
+#: CTFd/themes/core-beta/templates/users/private.html:114
+#: CTFd/themes/core-beta/templates/users/public.html:113
+msgid "Challenge"
+msgstr "چالش"
+
+#: CTFd/themes/core-beta/templates/challenge.html:19
+#, python-format
+msgid "%(num)d Solve"
+msgid_plural "%(num)d Solves"
+msgstr[0] "%(num)d حل"
+msgstr[1] "%(num)d حل"
+msgstr[2] "%(num)d حل"
+msgstr[3] "%(num)d حل"
+msgstr[4] "%(num)d حل"
+msgstr[5] "%(num)d حل"
+
+#: CTFd/themes/core-beta/templates/challenge.html:73
+msgid "View Hint"
+msgstr "اشاره"
+
+#: CTFd/themes/core-beta/templates/challenge.html:135
+msgid "Flag"
+msgstr "پرچم"
+
+#: CTFd/themes/core-beta/templates/challenge.html:167
+msgid "Next Challenge"
+msgstr "چالش بعدی"
+
+#: CTFd/themes/core-beta/templates/challenge.html:186
+#: CTFd/themes/core-beta/templates/setup.html:305
+#: CTFd/themes/core-beta/templates/setup.html:326
+msgid "Date"
+msgstr "تاریخ"
+
+#: CTFd/themes/core-beta/templates/challenges.html:7
+#: CTFd/themes/core-beta/templates/components/navbar.html:57
+msgid "Challenges"
+msgstr "چالش ها"
+
+#: CTFd/themes/core-beta/templates/confirm.html:7
+msgid "Confirm"
+msgstr "تایید"
+
+#: CTFd/themes/core-beta/templates/confirm.html:18
+msgid "We've sent a confirmation email to your email address."
+msgstr "ما یک ایمیل تأیید را به آدرس ایمیل شما ارسال کرده ایم."
+
+#: CTFd/themes/core-beta/templates/confirm.html:24
+msgid "Please click the link in that email to confirm your account."
+msgstr "لطفاً برای تأیید حساب خود روی پیوند موجود در آن ایمیل کلیک کنید."
+
+#: CTFd/themes/core-beta/templates/confirm.html:30
+msgid "If the email doesn’t arrive, check your spam folder or contact an administrator to manually verify your account."
+msgstr "اگر ایمیل وارد نشود ، پوشه هرزنامه خود را بررسی کنید یا با یک سرپرست تماس بگیرید تا حساب خود را به صورت دستی تأیید کنید."
+
+#: CTFd/themes/core-beta/templates/confirm.html:43
+msgid "Change Email Address"
+msgstr "تغییر آدرس ایمیل"
+
+#: CTFd/themes/core-beta/templates/components/navbar.html:178
+#: CTFd/themes/core-beta/templates/login.html:7
+msgid "Login"
+msgstr "ورود"
+
+#: CTFd/themes/core-beta/templates/login.html:40
+msgid "Forgot your password?"
+msgstr "گذرواژه خود را فراموش کرده اید؟"
+
+#: CTFd/themes/core-beta/templates/components/navbar.html:97
+#: CTFd/themes/core-beta/templates/notifications.html:7
+msgid "Notifications"
+msgstr "اعلان ها"
+
+#: CTFd/themes/core-beta/templates/notifications.html:14
+msgid "There are no notifications yet"
+msgstr "هنوز هیچ اعلان وجود ندارد"
+
+#: CTFd/themes/core-beta/templates/components/navbar.html:165
+#: CTFd/themes/core-beta/templates/register.html:7
+msgid "Register"
+msgstr "ثبت نام"
+
+#: CTFd/themes/core-beta/templates/register.html:35
+msgid "Your username on the site"
+msgstr "نام کاربری شما در سایت"
+
+#: CTFd/themes/core-beta/templates/register.html:43
+msgid "Never shown to the public"
+msgstr "هرگز به عموم نشان داده نشده است"
+
+#: CTFd/themes/core-beta/templates/register.html:51
+msgid "Password used to log into your account"
+msgstr "رمز عبور استفاده شده برای ورود به حساب شما"
+
+#: CTFd/themes/core-beta/templates/reset_password.html:7
+msgid "Reset Password"
+msgstr "بازنشانی گذرواژه"
+
+#: CTFd/themes/core-beta/templates/reset_password.html:21
+msgid "You can now reset the password for your account and log in. Please enter in a new password below."
+msgstr "اکنون می توانید رمز ورود را برای حساب خود تنظیم کنید و وارد شوید. لطفاً در زیر رمز عبور جدید را وارد کنید."
+
+#: CTFd/themes/core-beta/templates/reset_password.html:44
+msgid "Please provide the email address associated with your account below."
+msgstr "لطفاً آدرس ایمیل مرتبط با حساب خود را در زیر ارائه دهید."
+
+#: CTFd/themes/core-beta/templates/components/navbar.html:135
+#: CTFd/themes/core-beta/templates/settings.html:8
+#: CTFd/themes/core-beta/templates/setup.html:50
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: CTFd/themes/core-beta/templates/components/navbar.html:123
+#: CTFd/themes/core-beta/templates/settings.html:21
+msgid "Profile"
+msgstr "حساب کاربری"
+
+#: CTFd/themes/core-beta/templates/settings.html:26
+msgid "Access Tokens"
+msgstr "توکن دسترسی"
+
+#: CTFd/themes/core-beta/templates/settings.html:95
+msgid "Your profile has been updated"
+msgstr "پروفایل کاربری شما به روز رسانی شد"
+
+#: CTFd/themes/core-beta/templates/settings.html:103
+#: CTFd/themes/core-beta/templates/teams/private.html:83
+#: CTFd/themes/core-beta/templates/teams/private.html:198
+msgid "Error:"
+msgstr "خطا:"
+
+#: CTFd/themes/core-beta/templates/settings.html:129
+msgid "API Key Generated"
+msgstr "کلید api تولید شد"
+
+#: CTFd/themes/core-beta/templates/settings.html:137
+msgid "Please copy your API Key, it won't be shown again!"
+msgstr "لطفاً کلید API خود را کپی کنید ، دوباره نشان داده نمی شود!"
+
+#: CTFd/themes/core-beta/templates/settings.html:183
+msgid "Active Tokens"
+msgstr "توکن های فعال"
+
+#: CTFd/themes/core-beta/templates/settings.html:195
+msgid "Delete Token"
+msgstr "حذف توکن"
+
+#: CTFd/themes/core-beta/templates/settings.html:204
+msgid "Are you sure you want to delete this token?"
+msgstr "آیا مطمئن هستید که می خواهید این نشانه را حذف کنید؟"
+
+#: CTFd/themes/core-beta/templates/settings.html:224
+msgid "Created"
+msgstr "ساخته شد"
+
+#: CTFd/themes/core-beta/templates/settings.html:226
+msgid "Description"
+msgstr "توصیف"
+
+#: CTFd/themes/core-beta/templates/settings.html:227
+msgid "Delete"
+msgstr "حذف"
+
+#: CTFd/themes/core-beta/templates/setup.html:24
+msgid "Setup"
+msgstr "ساختن"
+
+#: CTFd/themes/core-beta/templates/setup.html:44
+msgid "General"
+msgstr "تولید کردن"
+
+#: CTFd/themes/core-beta/templates/setup.html:47
+msgid "Mode"
+msgstr "حالت"
+
+#: CTFd/themes/core-beta/templates/setup.html:53
+msgid "Administration"
+msgstr "Administration"
+
+#: CTFd/themes/core-beta/templates/setup.html:56
+msgid "Style"
+msgstr "استایل"
+
+#: CTFd/themes/core-beta/templates/setup.html:59
+msgid "Date &amp; Time"
+msgstr "زمان &amp; تاریخ"
+
+#: CTFd/themes/core-beta/templates/setup.html:62
+msgid "Integrations"
+msgstr "ادغام"
+
+#: CTFd/themes/core-beta/templates/setup.html:86
+#: CTFd/themes/core-beta/templates/setup.html:138
+#: CTFd/themes/core-beta/templates/setup.html:202
+#: CTFd/themes/core-beta/templates/setup.html:238
+#: CTFd/themes/core-beta/templates/setup.html:296
+#: CTFd/themes/core-beta/templates/setup.html:345
+msgid "Next"
+msgstr "بعدی"
+
+#: CTFd/themes/core-beta/templates/setup.html:112
+msgid "Participants register accounts and form teams"
+msgstr "شرکت کنندگان حساب ها را ثبت می کنند و تیم ها را تشکیل می دهند"
+
+#: CTFd/themes/core-beta/templates/setup.html:113
+msgid "If a team member solves a challenge, the entire team receives credit"
+msgstr "اگر یکی از اعضای تیم یک چالش را حل کند ، کل تیم اعتبار دریافت می کند"
+
+#: CTFd/themes/core-beta/templates/setup.html:115
+msgid "Easier to see which team member solved a challenge"
+msgstr "آسان تر برای دیدن کدام یک از اعضای تیم یک چالش را حل کرده است"
+
+#: CTFd/themes/core-beta/templates/setup.html:116
+msgid "May be slightly more difficult to administer"
+msgstr "اجرای آن ممکن است کمی دشوارتر باشد"
+
+#: CTFd/themes/core-beta/templates/setup.html:120
+msgid "Participants only register an individual account"
+msgstr "شرکت کنندگان فقط یک حساب شخصی ثبت می کنند"
+
+#: CTFd/themes/core-beta/templates/setup.html:121
+msgid "Players can share accounts to form pseudo-teams"
+msgstr "بازیکنان می توانند حساب ها را برای تشکیل تیم های شبه به اشتراک بگذارند"
+
+#: CTFd/themes/core-beta/templates/setup.html:123
+msgid "Easier to organize"
+msgstr "سازماندهی آسان تر"
+
+#: CTFd/themes/core-beta/templates/setup.html:124
+msgid "Difficult to attribute solutions to individual team members"
+msgstr "نسبت دادن راه حل ها به اعضای تیم انفرادی دشوار است"
+
+#: CTFd/themes/core-beta/templates/setup.html:143
+msgid "Visibility Settings"
+msgstr "تنظیمات دید"
+
+#: CTFd/themes/core-beta/templates/setup.html:146
+msgid "Control the visibility of different sections of CTFd"
+msgstr "قابلیت مشاهده بخش های مختلف CTFD را کنترل کنید"
+
+#: CTFd/themes/core-beta/templates/setup.html:232
+msgid "Subscribe email address to the CTFd LLC Newsletter for news and updates"
+msgstr " برای اخبار و به روزرسانی آدرس ایمیل به خبرنامه CTFD LLC مشترک شوید"
+
+#: CTFd/themes/core-beta/templates/setup.html:309
+#: CTFd/themes/core-beta/templates/setup.html:330
+#: CTFd/themes/core-beta/templates/teams/private.html:378
+#: CTFd/themes/core-beta/templates/teams/public.html:144
+#: CTFd/themes/core-beta/templates/users/private.html:117
+#: CTFd/themes/core-beta/templates/users/public.html:116
+msgid "Time"
+msgstr "زمان"
+
+#: CTFd/themes/core-beta/templates/setup.html:334
+msgid "UTC Preview"
+msgstr "منطقه زمانی"
+
+#: CTFd/themes/core-beta/templates/components/navbar.html:34
+#: CTFd/themes/core-beta/templates/users/users.html:6
+msgid "Users"
+msgstr "کاربران"
+
+#: CTFd/themes/core-beta/templates/components/navbar.html:41
+#: CTFd/themes/core-beta/templates/teams/teams.html:6
+msgid "Teams"
+msgstr "تیم ها"
+
+#: CTFd/themes/core-beta/templates/components/navbar.html:50
+msgid "Scoreboard"
+msgstr "جدول امتیازات"
+
+#: CTFd/themes/core-beta/templates/components/navbar.html:80
+msgid "Admin Panel"
+msgstr "پنل ادمین"
+
+#: CTFd/themes/core-beta/templates/components/navbar.html:110
+#: CTFd/themes/core-beta/templates/teams/team_enrollment.html:6
+#: CTFd/themes/core-beta/templates/teams/teams.html:49
+msgid "Team"
+msgstr "تیم"
+
+#: CTFd/themes/core-beta/templates/components/navbar.html:147
+msgid "Logout"
+msgstr "خروج"
+
+#: CTFd/themes/core-beta/templates/errors/403.html:9
+msgid "Forbidden"
+msgstr "ممنوع"
+
+#: CTFd/themes/core-beta/templates/errors/404.html:11
+msgid "File not found"
+msgstr "فایل یافت نشد"
+
+#: CTFd/themes/core-beta/templates/errors/404.html:12
+msgid "Sorry about that"
+msgstr "بابت این موضوع متاسفیم"
+
+#: CTFd/themes/core-beta/templates/errors/429.html:11
+msgid "Too many requests"
+msgstr "تعداد درخواستها بیش از حد مجاز است."
+
+#: CTFd/themes/core-beta/templates/errors/429.html:12
+msgid "Please slow down!"
+msgstr "آرامتر :"
+
+#: CTFd/themes/core-beta/templates/errors/502.html:11
+msgid "Bad Gateway"
+msgstr "Bad Gateway"
+
+#: CTFd/themes/core-beta/templates/macros/forms.html:13
+#: CTFd/themes/core-beta/templates/macros/forms.html:36
+msgid "(Optional)"
+msgstr "(اختياري)"
+
+#: CTFd/themes/core-beta/templates/teams/invite.html:6
+#: CTFd/themes/core-beta/templates/teams/join_team.html:6
+#: CTFd/themes/core-beta/templates/teams/team_enrollment.html:36
+msgid "Join Team"
+msgstr "به تیم بپیوندید"
+
+#: CTFd/themes/core-beta/templates/teams/invite.html:15
+#: CTFd/themes/core-beta/templates/teams/team_enrollment.html:12
+msgid "Welcome to"
+msgstr "خوش آمدید به"
+
+#: CTFd/themes/core-beta/templates/teams/invite.html:19
+msgid "Click the button below to join the team!"
+msgstr "برای پیوستن به تیم ، روی دکمه زیر کلیک کنید!"
+
+#: CTFd/themes/core-beta/templates/teams/new_team.html:6
+#: CTFd/themes/core-beta/templates/teams/team_enrollment.html:39
+msgid "Create Team"
+msgstr "یک تیم بسازید"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:8
+msgid "Edit Team"
+msgstr "تیم را تغییر دهید"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:76
+msgid "Your team's profile has been updated"
+msgstr "پروفایل تیم به روز رسانی شد"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:104
+msgid "Choose Captain"
+msgstr "کاپیتان را انتخاب کنید."
+
+#: CTFd/themes/core-beta/templates/teams/private.html:127
+msgid "Your captain rights have been transferred"
+msgstr "حقوق کاپیتان شما منتقل شده است"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:152
+msgid "Invite Users"
+msgstr "دعوت از کاربران"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:171
+msgid "Share this link with your team members for them to join your team"
+msgstr "این پیوند را با اعضای تیم خود به اشتراک بگذارید تا آنها به تیم خود بپیوندند"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:174
+msgid "Invite links can be re-used and expire after 1 day"
+msgstr "پیوندها را می توان دوباره استفاده کرد و بعد از 1 روز منقضی شد"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:188
+msgid "Disband Team"
+msgstr "تیم منسوج"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:193
+msgid "Are you sure you want to disband your team?"
+msgstr "آیا مطمئن هستید که می خواهید تیم خود را منحل کنید؟"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:206
+msgid "No"
+msgstr "خیر"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:207
+msgid "Yes"
+msgstr "بله"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:218
+#: CTFd/themes/core-beta/templates/teams/public.html:10
+#: CTFd/themes/core-beta/templates/users/private.html:21
+#: CTFd/themes/core-beta/templates/users/public.html:21
+#: CTFd/themes/core-beta/templates/users/users.html:66
+msgid "Official"
+msgstr "رسمي"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:250
+msgid "place"
+msgstr "مكان"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:258
+msgid "points"
+msgstr "امتیاز"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:315
+#: CTFd/themes/core-beta/templates/teams/public.html:81
+msgid "Members"
+msgstr "أعضاء"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:320
+#: CTFd/themes/core-beta/templates/teams/public.html:86
+msgid "Score"
+msgstr "نتيجة"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:332
+msgid "Captain"
+msgstr "کاپیتان"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:348
+#: CTFd/themes/core-beta/templates/teams/public.html:109
+#: CTFd/themes/core-beta/templates/users/private.html:88
+#: CTFd/themes/core-beta/templates/users/public.html:88
+msgid "Awards"
+msgstr "جایزه‌ها"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:371
+#: CTFd/themes/core-beta/templates/teams/public.html:137
+#: CTFd/themes/core-beta/templates/users/private.html:110
+msgid "Solves"
+msgstr "حل‌ها"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:376
+#: CTFd/themes/core-beta/templates/teams/public.html:142
+#: CTFd/themes/core-beta/templates/users/private.html:115
+#: CTFd/themes/core-beta/templates/users/public.html:114
+msgid "Category"
+msgstr "دسته‌بندی"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:377
+#: CTFd/themes/core-beta/templates/teams/public.html:143
+#: CTFd/themes/core-beta/templates/users/private.html:116
+#: CTFd/themes/core-beta/templates/users/public.html:115
+msgid "Value"
+msgstr "ارزش"
+
+#: CTFd/themes/core-beta/templates/teams/private.html:468
+#: CTFd/themes/core-beta/templates/teams/public.html:232
+#: CTFd/themes/core-beta/templates/users/private.html:203
+#: CTFd/themes/core-beta/templates/users/public.html:204
+msgid "No solves yet"
+msgstr "هنوز حل نشده است"
+
+#: CTFd/themes/core-beta/templates/teams/team_enrollment.html:14
+msgid "In order to participate you must either join or create a team."
+msgstr "برای مشارکت شما باید یا به تیم بپیوندید یا تیم ایجاد کنید."
+
+#: CTFd/themes/core-beta/templates/teams/team_enrollment.html:22
+msgid "Play with Official Team"
+msgstr "با تیم رسمی بازی کنید"
+
+#: CTFd/themes/core-beta/templates/teams/team_enrollment.html:27
+msgid "Join Unofficial Team"
+msgstr "به تیمی غیر رسمی بپیوندید"
+
+#: CTFd/themes/core-beta/templates/teams/team_enrollment.html:30
+msgid "Create Unofficial Team"
+msgstr "تیمی غیررسمی بسازید"
+
+#: CTFd/themes/core-beta/templates/teams/teams.html:124
+#: CTFd/themes/core-beta/templates/users/users.html:114
+msgid "Page"
+msgstr "صفحة"
+
+#: CTFd/themes/core-beta/templates/users/users.html:46
+msgid "User"
+msgstr "کاربر"
+
+#: CTFd/utils/modes/__init__.py:35
+msgid "user"
+msgid_plural "users"
+msgstr[0] "کاربر"
+msgstr[1] "کاربر"
+msgstr[2] "کاربران"
+msgstr[3] "کاربر"
+msgstr[4] "کاربر"
+msgstr[5] "کاربر"
+
+#: CTFd/utils/modes/__init__.py:37
+msgid "team"
+msgid_plural "teams"
+msgstr[0] "تیم"
+msgstr[1] "تیم"
+msgstr[2] "تیم"
+msgstr[3] "تیم"
+msgstr[4] "تیم"
+msgstr[5] "تیم"
+

@@ -6,7 +6,7 @@
 {% block content %}
 	<div class="jumbotron">
 		<div class="container">
-			<h1>Users</h1>
+			<h1>کاربران</h1>
 		</div>
 	</div>
 	<div class="container">
@@ -17,7 +17,7 @@
 					Searching for users with <strong>{{ field }}</strong> matching <strong>{{ q }}</strong>
 				</h5>
 				<h6 class="text-muted text-center pb-3">
-					Page {{ users.page }} of {{ users.total }} results
+					صفحه {{ users.page }} از {{ users.total }} نتیجه
 				</h6>
 				{% endif %}
 
@@ -27,7 +27,7 @@
 						{{ form.field(class="form-control custom-select w-100") }}
 					</div>
 					<div class="form-group col-md-8">
-						{{ form.q(class="form-control w-100", placeholder="Search for matching users") }}
+						{{ form.q(class="form-control w-100", placeholder="جستجو کاربران با ویژگی‌های مدنظر") }}
 					</div>
 					<div class="form-group col-md-2">
 						<button type="submit" class="btn btn-primary w-100">
@@ -46,10 +46,10 @@
 				<table class="table table-striped">
 					<thead>
 					<tr>
-						<td><b>User</b></td>
-						<td><b>Website</b></td>
-						<td class="d-none d-md-table-cell d-lg-table-cell"><b>Affiliation</b></td>
-						<td class="d-none d-md-table-cell d-lg-table-cell"><b>Country</b></td>
+						<td><b>کاربر</b></td>
+						<td><b>پبسایت</b></td>
+						<td class="d-none d-md-table-cell d-lg-table-cell"><b>توصیه‌کردن</b></td>
+						<td class="d-none d-md-table-cell d-lg-table-cell"><b>کشور</b></td>
 					</tr>
 					</thead>
 					<tbody>
@@ -65,7 +65,7 @@
 								{% endif %}
 								{% if user.oauth_id %}
 									<a href="https://majorleaguecyber.org/u/{{ user.name }}">
-										<span class="badge badge-primary">Official</span>
+										<span class="badge badge-primary">رسمی</span>
 									</a>
 								{% endif %}
 							</td>
@@ -107,7 +107,7 @@
 		{% if users.pages > 1 %}
 			<div class="row">
 				<div class="col-md-12">
-					<div class="text-center">Page
+					<div class="text-center">صفحه
 						<br>
 						{% if users.page != 1 %}
 						<a href="{{ prev_page }}">&lt;&lt;&lt;</a>

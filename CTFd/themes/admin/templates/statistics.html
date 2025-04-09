@@ -3,25 +3,25 @@
 {% block content %}
 <div class="jumbotron">
 	<div class="container">
-		<h1>Statistics</h1>
+		<h1>آمار</h1>
 	</div>
 </div>
 <div class="container">
 	<div class="row d-flex align-items-center">
 		<div class="col-md-4 text-right">
-			<h5><b>{{ user_count }}</b> users registered</h5>
+			<h5><b>{{ user_count }}</b> کاربر ثبت‌نام کرده‌است.</h5>
 			{% if get_config('user_mode') == 'teams' %}
-			<h5><b>{{ team_count }}</b> teams registered</h5>
+			<h5><b>{{ team_count }}</b> تیم ثبت‌نام کرده است.</h5>
 			{% endif %}
-			<h5><b>{{ ip_count }}</b> IP addresses</h5>
+			<h5><b>{{ ip_count }}</b> آدرس‌های IP</h5>
 			<hr>
-			<h5><b>{{ total_points }}</b> total possible points</h5>
-			<h5><b>{{ challenge_count }}</b> challenges</h5>
+			<h5><b>{{ total_points }}</b> مجموع امتیازات ممکن</h5>
+			<h5><b>{{ challenge_count }}</b> چالش</h5>
 			{% if most_solved %}
-				<h5><b>{{ most_solved }}</b> has the most solves with <br>{{ solve_data[most_solved] }} solves</h5>
+				<h5><b>{{ most_solved }}</b> بیشترین تعداد حل را با <br>{{ solve_data[most_solved] }} حل دارد.</h5>
 			{% endif %}
 			{% if least_solved %}
-			<h5><b>{{ least_solved }}</b> has the least solves with <br>{{ solve_data[least_solved] }} solves</h5>
+			<h5><b>{{ least_solved }}</b> کمترین میزان حل را با <br>{{ solve_data[least_solved] }} حل دارد.</h5>
 			{% endif %}
 		</div>
 
@@ -70,8 +70,8 @@
 				</div>
 			</div>
 			<div class="text-center">
-				<h5><b>{{ solve_count }}</b> right submissions</h5>
-				<h5><b>{{ wrong_count }}</b> wrong submissions</h5>
+				<h5><b>{{ solve_count }}</b> ارسال درست</h5>
+				<h5><b>{{ wrong_count }}</b> ارسال اشتباه</h5>
 			</div>
 		</div>
 		<div class="col-md-4">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa" dir="rtl">
 <head>
 	<title>{{ Configs.ctf_name }}</title>
 	<meta charset="utf-8">
@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/fonts.css') }}">
 	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/main.css') }}">
 	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/core.css') }}">
+	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/bootstrap.rtl.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/rtl.css') }}">
+	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/fonts.css') }}">
 	{% block stylesheets %}
 	{% endblock %}
 
@@ -40,7 +43,7 @@
 	<footer class="footer">
 		<div class="container text-center">
 			<a href="https://ctfd.io" class="text-secondary">
-				<small class="text-muted">Powered by CTFd</small>
+				<small class="text-muted">نیرو‌گرفته از CTFd</small>
 			</a>
 		</div>
 	</footer>

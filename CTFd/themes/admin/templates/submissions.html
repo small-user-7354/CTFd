@@ -7,7 +7,7 @@
 
 <div class="jumbotron">
 	<div class="container">
-		<h1>{% if type %}{{ type|title }} {% endif %}Submissions</h1>
+		<h1>{% if type %}{{ type|title }} {% endif %}ارسال</h1>
 	</div>
 </div>
 
@@ -20,7 +20,7 @@
 				Searching for submissions with <strong>{{ field }}</strong> matching <strong>{{ q }}</strong>
 			</h5>
 			<h6 class="text-muted text-center pb-3">
-				Page {{ submissions.page }} of {{ submissions.total }} results
+				صفحه {{ submissions.page }} از {{ submissions.total }} نتیجه
 			</h6>
 			{% endif %}
 
@@ -85,10 +85,10 @@
 						<th class="sort-col"><b>User</b></th>
 						{% endif %}
 						<th class="sort-col"><b>{{ get_mode_as_word(capitalize=True) }}</b></th>
-						<th class="sort-col"><b>Challenge</b></th>
-						<th class="sort-col"><b>Type</b></th>
-						<th class="sort-col"><b>Provided</b></th>
-						<th class="text-center sort-col"><b>Date</b></th>
+						<th class="sort-col"><b>چالش</b></th>
+						<th class="sort-col"><b>نوع</b></th>
+						<th class="sort-col"><b>ارائه شده است</b></th>
+						<th class="text-center sort-col"><b>تاریخ</b></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -145,7 +145,7 @@
 				</tbody>
 			</table>
 			{% if submissions.pages > 1 %}
-			<div class="text-center">Page
+			<div class="text-center">صفحه
 				<br>
 				{% if submissions.page != 1 %}
 					<a href="{{ prev_page }}">&lt;&lt;&lt;</a>

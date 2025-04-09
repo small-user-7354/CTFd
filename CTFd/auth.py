@@ -421,13 +421,13 @@ def login():
                     "[{date}] {ip} - submitted invalid password for {name}",
                     name=user.name,
                 )
-                errors.append("Your username or password is incorrect")
+                errors.append("نام‌کاربری یا رمز عبور اشتباه است.")
                 db.session.close()
                 return render_template("login.html", errors=errors)
         else:
             # This user just doesn't exist
             log("logins", "[{date}] {ip} - submitted invalid account information")
-            errors.append("Your username or password is incorrect")
+            errors.append("نام‌کاربری یا رمز عبور اشتباه است.")
             db.session.close()
             return render_template("login.html", errors=errors)
     else:

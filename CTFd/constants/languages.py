@@ -23,30 +23,32 @@ class Languages(str, RawEnum):
     ROMANIAN = "ro"
     SLOVENIAN = "sl"
     SWEDISH = "sv"
+    PERSIAN = "fa"
 
 
 LANGUAGE_NAMES = {
     "en": "English",
-    "de": "Deutsch",
-    "pl": "Polski",
-    "es": "Español",
-    "ar": "اَلْعَرَبِيَّةُ",
-    "zh_CN": "简体中文",
-    "zh_TW": "繁體中文",
-    "fr": "Français",
-    "ko": "한국어",
-    "ru": "русский язык",
-    "pt_BR": "Português do Brasil",
-    "sk": "Slovenský jazyk",
-    "ja": "日本語",
-    "it": "Italiano",
-    "vi": "tiếng Việt",
-    "ca": "Català",
-    "el": "Ελληνικά",
-    "fi": "Suomi",
-    "ro": "Română",
-    "sl": "Slovenščina",
-    "sv": "Svenska",
+    # "de": "Deutsch",
+    # "pl": "Polski",
+    # "es": "Español",
+    # "ar": "اَلْعَرَبِيَّةُ",
+    # "zh_CN": "简体中文",
+    # "zh_TW": "繁體中文",
+    # "fr": "Français",
+    # "ko": "한국어",
+    # "ru": "русский язык",
+    # "pt_BR": "Português do Brasil",
+    # "sk": "Slovenský jazyk",
+    # "ja": "日本語",
+    # "it": "Italiano",
+    # "vi": "tiếng Việt",
+    # "ca": "Català",
+    # "el": "Ελληνικά",
+    # "fi": "Suomi",
+    # "ro": "Română",
+    # "sl": "Slovenščina",
+    # "sv": "Svenska",
+    "fa": "پارسی"
 }
 
 SELECT_LANGUAGE_LIST = [("", "")] + [
