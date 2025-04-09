@@ -104,7 +104,7 @@ def reset_password(data=None):
             "reset_password.html",
             errors=[
                 markup(
-                    "This CTF is not configured to send email.<br> Please contact an organizer to have your password reset."
+                    "در حال حاضر ایمیل پشتیبانی نمیشود. <br/> برای تغییر گذرواژه با ادمین سیستم تماس برقرار کنید. "
                 )
             ],
         )

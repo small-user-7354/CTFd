@@ -32,6 +32,21 @@ blockquote {
   padding-left: 15px;
 }
 
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-menu {
+  text-align: right;
+}
+
+.nav-item {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
 input,
 select {
   padding: 0.6rem !important;

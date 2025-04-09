@@ -21,6 +21,13 @@
   $directory: "../webfonts"
 );
 
+@font-face {
+  font-family: 'Vazir';
+  src: url('../../static/webfonts/Vazirmatn-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $fa-font-display: auto !default;
 @import "~/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~/@fortawesome/fontawesome-free/scss/regular.scss";
