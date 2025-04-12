@@ -23,7 +23,7 @@
 
 @font-face {
   font-family: 'Vazir';
-  src: url('../../static/webfonts/Vazirmatn-Medium.woff2') format('woff2');
+  src: url('../../static/webfonts/Vazirmatn-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,3 +33,17 @@ $fa-font-display: auto !default;
 @import "~/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "~/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~/@fortawesome/fontawesome-free/scss/brands.scss";
+
+
+
+
+$main-font: 'Vazir', sans-serif;
+
+html,
+body,
+a,
+.container {
+  font-family: $main-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

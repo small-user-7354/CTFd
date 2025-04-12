@@ -31,7 +31,7 @@ const graph_configs = {
       const option = {
         title: {
           left: "center",
-          text: "Solve Counts",
+          text: "تعداد حل‌ها",
         },
         tooltip: {
           trigger: "item",
@@ -523,7 +523,7 @@ const graph_configs = {
 
   "#score-distribution-graph": {
     layout: (annotations) => ({
-      title: "Score Distribution",
+      title: "توزیع امتیازات",
       xaxis: {
         title: "Score Bracket",
         showticklabels: true,
@@ -564,7 +564,7 @@ const graph_configs = {
       const option = {
         title: {
           left: "center",
-          text: "Score Distribution",
+          text: "توزیع امتیازات",
         },
         tooltip: {
           trigger: "item",

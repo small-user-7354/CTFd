@@ -196,7 +196,7 @@ def register():
     if num_users_limit and num_users >= num_users_limit:
         abort(
             403,
-            description=f"Reached the maximum number of users ({num_users_limit}).",
+            description=f"حداکثر تعداد کاربران ({num_users_limit}).",
         )
 
     if request.method == "POST":
