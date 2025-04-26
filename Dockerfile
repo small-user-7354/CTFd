@@ -1,8 +1,9 @@
-FROM python:3.11-slim-bookworm AS build
+FROM docker.sadegh.ir/python:3.11-slim-bookworm AS build
 
 WORKDIR /opt/CTFd
 
 # hadolint ignore=DL3008
+RUN echo "deb http://192.168.100.102:8081/repository/apt-proxy/ bookworm main contrib non-free-firmware non-free" > /etc/apt/sources.list
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         build-essential \
@@ -26,10 +27,11 @@ RUN pip install --no-cache-dir -r requirements.txt \
     done;
 
 
-FROM python:3.11-slim-bookworm AS release
+FROM docker.sadegh.ir/python:3.11-slim-bookworm AS release
 WORKDIR /opt/CTFd
 
 # hadolint ignore=DL3008
+RUN echo "deb http://192.168.100.102:8081/repository/apt-proxy/ bookworm main contrib non-free-firmware non-free" > /etc/apt/sources.list
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         libffi8 \

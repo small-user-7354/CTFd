@@ -25,7 +25,7 @@ services:
         internal:
 
   nginx:
-    image: nginx:stable
+    image: docker.sadegh.ir/nginx:1.27.4-bookworm
     restart: always
     volumes:
       - ./conf/nginx/http.conf:/etc/nginx/nginx.conf
@@ -35,7 +35,7 @@ services:
       - ctfd
 
   db:
-    image: mariadb:10.11
+    image: docker.sadegh.ir/mariadb:10.11
     restart: always
     environment:
       - MARIADB_ROOT_PASSWORD=ctfd
@@ -51,7 +51,7 @@ services:
     command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]
 
   cache:
-    image: redis:4
+    image: docker.sadegh.ir/redis:4
     restart: always
     volumes:
     - .data/redis:/data
