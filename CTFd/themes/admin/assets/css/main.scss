@@ -85,6 +85,7 @@ blockquote {
   background-color: transparent !important;
   border-color: #a3d39c;
   box-shadow: 0 0 0 0.1rem #a3d39c;
+  font-family: "Vazir-Bold", sans-serif;
   transition:
     background-color 0.3s,
     border-color 0.3s;
@@ -92,6 +93,7 @@ blockquote {
 
 .input-filled-invalid {
   background-color: transparent !important;
+  font-family: "Vazir-Bold", sans-serif;
   border-color: #d46767;
   box-shadow: 0 0 0 0.1rem #d46767;
   transition:
@@ -104,6 +106,7 @@ blockquote {
   color: #545454;
   border-color: #545454;
   border: 3px solid;
+  font-family: "Vazir-Bold", sans-serif;
 }
 
 .btn-outlined {
@@ -127,24 +130,29 @@ blockquote {
   line-height: 20px;
   font-weight: 700;
   padding: 8px 20px;
+  font-family: "Vazir-Bold", sans-serif;
 }
 
 .btn-info {
   background-color: #5b7290 !important;
   border-color: #5b7290 !important;
+  font-family: "Vazir-Bold", sans-serif;
 }
 
 .badge-info {
   background-color: #5b7290 !important;
+  font-family: "Vazir-Bold", sans-serif;
 }
 
 .alert {
   border-radius: 0 !important;
   padding: 0.8em;
+  font-family: "Vazir-Bold", sans-serif;
 }
 
 .btn-fa {
   cursor: pointer;
+  font-family: "Vazir-Bold", sans-serif;
 }
 
 .close {
