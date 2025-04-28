@@ -11,45 +11,45 @@
 			<div class="col-md-12">
 				{% with form = Forms.notifications.NotificationForm() %}
 				<form method="POST" id="notifications_form" autocomplete="off">
-					<div class="form-group">
+					<div class="form-group mb-4">
 						<b>{{ form.title.label }}</b>
 						{{ form.title(class="form-control") }}
 						<small class="form-text text-muted">
 							{{ form.title.description }}
 						</small>
 					</div>
-					<div class="form-group">
+					<div class="form-group mb-4">
 						<b>{{ form.content.label }}</b>
 						{{ form.content(class="form-control", rows="3") }}
 						<small class="form-text text-muted">
 							{{ form.content.description }}
 						</small>
 					</div>
-					<div class="form-row">
-						<div class="col">
+					<div class="form-row my-4">
+						<div class="col pr-1">
 							<div class="form-group">
 								<b>{{ form.type.label }}</b>
 							</div>
 							{% for radio in form.type %}
-								<div class="form-check form-check-inline pr-1">
+								<div class="form-check form-check-inline pr-2 py-2">
 									{{ radio(class="form-check-input") }}
 									{{ radio.label(class="form-check-label") }}
 								</div>
 							{% endfor %}
 							<small class="form-text text-muted">
-								{{ form.type.description }}
+								<p>{{ form.type.description }}</p>
 							</small>
 						</div>
-						<div class="col">
+						<div class="col my-4 pb-2">
 							<div class="form-group">
 								<b>{{ form.sound.label }}</b>
 							</div>
-							<div class="form-check">
+							<div class="form-check py-2 ">
 								{{ form.sound(class="form-check-input") }}
 								{{ form.sound.label(class="form-check-label") }}
 							</div>
 							<small class="form-text text-muted">
-								{{ form.sound.description }}
+								<p>{{ form.sound.description }}</p>
 							</small>
 						</div>
 					</div>
