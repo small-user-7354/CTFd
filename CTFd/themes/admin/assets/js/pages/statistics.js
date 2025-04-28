@@ -47,12 +47,12 @@ const graph_configs = {
           },
         },
         xAxis: {
-          name: "Solve Count",
+          name: "تعداد حل‌ها",
           nameLocation: "middle",
           type: "value",
         },
         yAxis: {
-          name: "Challenge Name",
+          name: "نام چالش",
           nameLocation: "middle",
           nameGap: 60,
           type: "category",
@@ -104,7 +104,7 @@ const graph_configs = {
       let option = {
         title: {
           left: "center",
-          text: "Submission Percentages",
+          text: "درصد سابمیت‌ها",
         },
         tooltip: {
           trigger: "item",
@@ -208,7 +208,7 @@ const graph_configs = {
       let option = {
         title: {
           left: "center",
-          text: "Category Breakdown",
+          text: "کتگوری‌ها",
         },
         tooltip: {
           trigger: "item",
@@ -228,7 +228,8 @@ const graph_configs = {
         },
         series: [
           {
-            name: "Category Breakdown",
+            // name: "Category Breakdown",
+            name: "کتگوری‌ها",
             type: "pie",
             radius: ["30%", "50%"],
             label: {
@@ -320,7 +321,7 @@ const graph_configs = {
       let option = {
         title: {
           left: "center",
-          text: "Point Breakdown",
+          text: "امتیازها", 
         },
         tooltip: {
           trigger: "item",
@@ -340,6 +341,7 @@ const graph_configs = {
         },
         series: [
           {
+            // name: "امتیازها",
             name: "Point Breakdown",
             type: "pie",
             radius: ["30%", "50%"],
@@ -397,9 +399,9 @@ const graph_configs = {
 
   "#solve-percentages-graph": {
     layout: (annotations) => ({
-      title: "Solve Percentages per Challenge",
+      title: "درصد پاسخ درست به ازای چالش",
       xaxis: {
-        title: "Challenge Name",
+        title: "نام چالش",
       },
       yaxis: {
         title: `Percentage of ${
@@ -437,7 +439,7 @@ const graph_configs = {
       const option = {
         title: {
           left: "center",
-          text: "Solve Percentages per Challenge",
+          text: "درصد پاسخ درست به ازای چالش",
         },
         tooltip: {
           trigger: "item",
@@ -458,7 +460,7 @@ const graph_configs = {
           },
         },
         xAxis: {
-          name: "Challenge Name",
+          name: "نام چالش",
           nameGap: 40,
           nameLocation: "middle",
           type: "category",
@@ -469,7 +471,7 @@ const graph_configs = {
           },
         },
         yAxis: {
-          name: `"Percentage of ${
+          name: `"درصد از ${
             CTFd.config.userMode.charAt(0).toUpperCase() +
             CTFd.config.userMode.slice(1)
           } (%)`,
@@ -525,7 +527,7 @@ const graph_configs = {
     layout: (annotations) => ({
       title: "توزیع امتیازات",
       xaxis: {
-        title: "Score Bracket",
+        title: "توزیع امتیازات",
         showticklabels: true,
         type: "category",
       },
@@ -580,17 +582,14 @@ const graph_configs = {
           },
         },
         xAxis: {
-          name: "Score Bracket",
+          name: "توزیع امتیازات",
           nameGap: 40,
           nameLocation: "middle",
           type: "category",
           data: brackets,
         },
         yAxis: {
-          name: `Number of ${
-            CTFd.config.userMode.charAt(0).toUpperCase() +
-            CTFd.config.userMode.slice(1)
-          }`,
+          name: `تعداد کاربران`,
           nameGap: 50,
           nameLocation: "middle",
           type: "value",

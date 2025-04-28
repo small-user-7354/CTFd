@@ -552,7 +552,7 @@ msgstr ""
 
 #: CTFd/themes/core-beta/templates/setup.html:53
 msgid "Administration"
-msgstr ""
+msgstr "" 
 
 #: CTFd/themes/core-beta/templates/setup.html:56
 msgid "Style"

@@ -56,12 +56,12 @@
     "isEntry": true
   },
   "assets/css/fonts.scss": {
-    "file": "assets/fonts-css-Bb2PAAlx.css",
+    "file": "assets/fonts-css-Di5qn-Uc.css",
     "src": "assets/css/fonts.scss",
     "isEntry": true
   },
   "assets/css/main.scss": {
-    "file": "assets/main-css-DTvu1M1m.css",
+    "file": "assets/main-css-BwjrXgkr.css",
     "src": "assets/css/main.scss",
     "isEntry": true
   },
@@ -144,7 +144,7 @@
     ]
   },
   "assets/js/pages/statistics.js": {
-    "file": "assets/pages/statistics-C_eYFOwB.js",
+    "file": "assets/pages/statistics-COj15_R8.js",
     "src": "assets/js/pages/statistics.js",
     "isEntry": true,
     "imports": [

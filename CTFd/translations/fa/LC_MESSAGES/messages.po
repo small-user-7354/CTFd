@@ -458,7 +458,7 @@ msgstr "حذف"
 
 #: CTFd/themes/core-beta/templates/setup.html:24
 msgid "Setup"
-msgstr "ساختن"
+msgstr "تنظیمات اولیه"
 
 #: CTFd/themes/core-beta/templates/setup.html:44
 msgid "General"
@@ -470,7 +470,7 @@ msgstr "حالت"
 
 #: CTFd/themes/core-beta/templates/setup.html:53
 msgid "Administration"
-msgstr "Administration"
+msgstr "مدیریت" 
 
 #: CTFd/themes/core-beta/templates/setup.html:56
 msgid "Style"

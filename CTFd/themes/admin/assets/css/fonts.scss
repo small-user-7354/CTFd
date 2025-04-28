@@ -28,6 +28,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Vazir-Bold';
+  src: url('../../static/webfonts/Vazir-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
 $fa-font-display: auto !default;
 @import "~/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~/@fortawesome/fontawesome-free/scss/regular.scss";
@@ -38,6 +45,7 @@ $fa-font-display: auto !default;
 
 
 $main-font: 'Vazir', sans-serif;
+$bold-font: 'Vazir-Bold', sans-serif;
 
 html,
 body,
@@ -46,4 +54,18 @@ a,
   font-family: $main-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2 {
+  font-family: $bold-font;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
 }

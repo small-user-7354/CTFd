@@ -27,6 +27,8 @@
     "@vue/compat": "^3.3.8",
     "alpinejs": "^3.13.3",
     "bootstrap": "~4.3.1",
+    "bootstrap-rtl": "^3.3.4",
+    "bootstrap-v4-rtl": "^4.6.2-1",
     "codemirror": "~5.58.2",
     "easymde": "^2.18.0",
     "echarts": "^5.4.3",

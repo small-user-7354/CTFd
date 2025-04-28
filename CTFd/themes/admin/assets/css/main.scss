@@ -1,4 +1,5 @@
-@import "~/bootstrap/scss/bootstrap.scss";
+// @import "~/bootstrap/scss/bootstrap.scss";
+@import "~/bootstrap-rtl/dist/css/bootstrap-rtl.min.css";
 @import "includes/jumbotron.css";
 @import "includes/sticky-footer.css";
 @import "includes/award-icons.scss";
@@ -7,18 +8,30 @@
 @import "includes/min-height.scss";
 
 html,
-body,
-.container {
+body{
   // font-family: "Vazir", "Lato", "LatoOffline", sans-serif;
   font-family: "Vazir", sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+.container {
+  // max-width: 100%;
+  // text-align: center;
+  direction: rtl;
+  font-family: "Vazir", sans-serif;
+  // margin-top: 50px;
+  // margin-bottom: 50px;
 }
 
 h1,
 h2 {
   // font-family: "Raleway", "RalewayOffline", sans-serif;
-  font-family: "Vazir", sans-serif;
+  font-family: "Vazir-Bold", sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
+  text-align: center;
+  direction: rtl;
 }
 
 a {
@@ -34,7 +47,8 @@ table > thead > tr > td {
 }
 
 blockquote {
-  border-left: 4px solid $secondary;
+  border-left: 4px solid #d46767;
+  // border-left: 4px solid $secondary;
   padding-left: 15px;
 }
 
