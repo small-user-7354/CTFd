@@ -44,6 +44,14 @@ table > thead > tr > td {
   /* Remove border line from thead of all tables */
   /* It can overlap with other element styles */
   border-top: none !important;
+  color: black;
+}
+
+table, thead, tbody, th, td, tr {
+  border: none !important;
+  border-radius: 0 !important;
+  font-family: "Vazir", sans-serif;
+  color: black;
 }
 
 blockquote {
@@ -182,4 +190,16 @@ blockquote {
   vertical-align: top;
   margin-left: -1.5em;
   font-size: 50%;
+}
+
+.from-group {
+  margin-bottom: 1.5em;
+}
+
+.form-control {
+  font-family: "Vazir", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0.5em 1em;
+  border-radius: 0;
 }

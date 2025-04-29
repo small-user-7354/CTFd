@@ -142,12 +142,12 @@ class UserSearchForm(BaseForm):
     field = SelectField(
         "Search Field",
         choices=[
-            ("name", "Name"),
+            ("name", "نام"),
             ("id", "ID"),
-            ("email", "Email"),
-            ("affiliation", "Affiliation"),
-            ("website", "Website"),
-            ("ip", "IP Address"),
+            ("email", "ایمیل"),
+            ("affiliation", "سازمان"),
+            ("website", "وبسایت"),
+            ("ip", "آدرس IP"),
         ],
         default="name",
         validators=[InputRequired()],
@@ -169,25 +169,25 @@ class PublicUserSearchForm(BaseForm):
     )
     q = StringField(
         _l("Parameter"),
-        description=_l("Search for matching users"),
+        description=_l("نتیجه جستجو برای کاربران منطبق "),
         validators=[InputRequired()],
     )
     submit = SubmitField(_l("Search"))
 
 
 class UserBaseForm(BaseForm):
-    name = StringField("User Name", validators=[InputRequired()])
-    email = EmailField("Email", validators=[InputRequired()])
-    language = SelectField(_l("Language"), choices=SELECT_LANGUAGE_LIST)
-    password = PasswordField("Password")
-    website = StringField("Website")
-    affiliation = StringField("Affiliation")
-    country = SelectField("Country", choices=SELECT_COUNTRIES_LIST)
-    type = SelectField("Type", choices=[("user", "User"), ("admin", "Admin")])
-    verified = BooleanField("Verified")
-    hidden = BooleanField("Hidden")
-    banned = BooleanField("Banned")
-    submit = SubmitField("Submit")
+    name = StringField("نام‌کاربری", validators=[InputRequired()])
+    email = EmailField("ایمیل", validators=[InputRequired()])
+    language = SelectField(_l("زبان"), choices=SELECT_LANGUAGE_LIST)
+    password = PasswordField("گذروازه")
+    website = StringField("وبسایت")
+    affiliation = StringField("وابستگی سازمانی")
+    country = SelectField("کشور", choices=SELECT_COUNTRIES_LIST)
+    type = SelectField("Type", choices=[("user", "کاربر عادی"), ("admin", "کاربر ادمین")])
+    verified = BooleanField("وریفای‌شده")
+    hidden = BooleanField("پنهان شده")
+    banned = BooleanField("بن شده")
+    submit = SubmitField("ارسال")
 
 
 def UserEditForm(*args, **kwargs):

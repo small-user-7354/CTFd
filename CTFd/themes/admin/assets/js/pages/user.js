@@ -123,8 +123,8 @@ function updateUser(event) {
 function deleteUser(event) {
   event.preventDefault();
   ezQuery({
-    title: "Delete User",
-    body: "Are you sure you want to delete {0}".format(
+    title: "حذف کاربر",
+    body: "مطمئنید که می‌خواهید حذف کنید: {0}".format(
       "<strong>" + htmlEntities(window.USER_NAME) + "</strong>",
     ),
     success: function () {
@@ -334,10 +334,10 @@ function solveSelectedMissingChallenges(event) {
   let target = challengeIDs.length === 1 ? "challenge" : "challenges";
 
   ezQuery({
-    title: `Mark Correct`,
-    body: `Are you sure you want to mark ${
+    title: `به عنوان صحیح علامت بزنید`,
+    body: `ایا مطمئنید که تعداد ${
       challengeIDs.length
-    } ${target} correct for ${htmlEntities(window.USER_NAME)}?`,
+    } ${target} چالش را به عنوان درست علامت بزنید برای:  ${htmlEntities(window.USER_NAME)}?`,
     success: function () {
       const reqs = [];
       for (var challengeID of challengeIDs) {

@@ -1,29 +1,29 @@
 {% with form = Forms.users.UserCreateForm() %}
 {% from "admin/macros/forms.html" import render_extra_fields %}
 <form id="user-info-create-form" method="POST">
-	<div class="form-group">
+	<div class="form-group my-4">
 		{{ form.name.label }}
 		{{ form.name(class="form-control", autocomplete="off") }}
 	</div>
-	<div class="form-group">
+	<div class="form-group my-4">
 		{{ form.email.label }}
 		{{ form.email(class="form-control", autocomplete="off") }}
 	</div>
-	<div class="form-group">
+	<div class="form-group my-4">
 		{{ form.password.label }}
 		{{ form.password(class="form-control", autocomplete="off") }}
 	</div>
-	<div class="form-group">
+	<div class="form-group my-4">
 		{{ form.website.label }}
 		<small class="float-right text-muted align-text-bottom">Optional</small>
 		{{ form.website(class="form-control", autocomplete="off") }}
 	</div>
-	<div class="form-group">
+	<div class="form-group my-4">
 		{{ form.affiliation.label }}
 		<small class="float-right text-muted align-text-bottom">Optional</small>
 		{{ form.affiliation(class="form-control", autocomplete="off") }}
 	</div>
-	<div class="form-group">
+	<div class="form-group my-4">
 		{{ form.country.label }}
 		<small class="float-right text-muted align-text-bottom">Optional</small>
 		{{ form.country(class="form-control custom-select", autocomplete="off") }}
@@ -31,7 +31,7 @@
 
 	{{ render_extra_fields(form.extra) }}
 
-	<div class="form-group">
+	<div class="form-group px-0 px-0">
 		<div class="form-check form-check-inline">
 			{{ form.type(class="form-control form-inline custom-select", id="type-select") }}
 		</div>
@@ -61,6 +61,9 @@
 	<div id="results">
 	</div>
 
+	<div class="container my-4">
 	{{ form.submit(id="update-user", class="btn btn-primary btn-outlined float-right modal-action") }}
+	</div>
+
 </form>
 {% endwith %}

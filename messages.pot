@@ -320,7 +320,7 @@ msgstr ""
 
 #: CTFd/forms/users.py:172
 msgid "Search for matching users"
-msgstr ""
+msgstr "نتیجه جستجو برای کاربران منطبق "
 
 #: CTFd/themes/core-beta/templates/base.html:53
 msgid "Powered by CTFd"
@@ -760,11 +760,11 @@ msgstr ""
 
 #: CTFd/themes/core-beta/templates/teams/private.html:206
 msgid "No"
-msgstr ""
+msgstr "خیر"
 
 #: CTFd/themes/core-beta/templates/teams/private.html:207
 msgid "Yes"
-msgstr ""
+msgstr "بله"
 
 #: CTFd/themes/core-beta/templates/teams/private.html:218
 #: CTFd/themes/core-beta/templates/teams/public.html:10
