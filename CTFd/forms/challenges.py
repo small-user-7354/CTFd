@@ -9,10 +9,10 @@ class ChallengeSearchForm(BaseForm):
     field = SelectField(
         "Search Field",
         choices=[
-            ("name", "Name"),
+            ("name", "نام"),
             ("id", "ID"),
-            ("category", "Category"),
-            ("type", "Type"),
+            ("category", "کتگوری"),
+            ("type", "نوع"),
         ],
         default="name",
         validators=[InputRequired()],

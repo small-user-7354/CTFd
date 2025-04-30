@@ -3,31 +3,31 @@
 
 <form method="POST">
 	{% block name %}
-	<div class="form-group">
+	<div class="form-group my-3">
 		<label>
-			Name<br>
-			<small class="form-text text-muted">Challenge Name</small>
+			نام<br>
+			<small class="form-text text-muted">نام چالش</small>
 		</label>
 		<input type="text" class="form-control chal-name" name="name" value="{{ challenge.name }}">
 	</div>
 	{% endblock %}
 
 	{% block category %}
-	<div class="form-group">
+	<div class="form-group my-3">
 		<label>
-			Category<br>
-			<small class="form-text text-muted">Challenge Category</small>
+			کتگوری<br>
+			<small class="form-text text-muted">کتگوری چالش</small>
 		</label>
 		<input type="text" class="form-control chal-category" name="category" value="{{ challenge.category }}">
 	</div>
 	{% endblock %}
 
 	{% block message %}
-	<div class="form-group">
+	<div class="form-group my-3">
 		<label>
-			Message<br>
+			پیام<br>
 			<small class="form-text text-muted">
-				Use this to give a brief introduction to your challenge.
+				از این برای ارائه مقدمه‌ای کوتاه در مورد چالش خود استفاده کنید.
 			</small>
 		</label>
 		<textarea id="desc-editor" class="form-control chal-desc-editor markdown" name="description" rows="10">{{ challenge.description }}</textarea>
@@ -35,11 +35,11 @@
 	{% endblock %}
 
 	{% block attribution %}
-	<div class="form-group">
+	<div class="form-group my-3">
 		<label>
-			Attribution:<br>
+			ویژگی:<br>
 			<small class="form-text text-muted">
-				Attribution for your challenge <small>(supports markdown)</small>
+				ویژگی‌های چالش شما <small>(از markdown پشتیبانی می‌کند)</small>
 			</small>
 		</label>
 		<input type="text" class="form-control" name="attribution" value="{{ challenge.attribution }}">
@@ -47,11 +47,11 @@
 	{% endblock %}
 
 	{% block connection_info %}
-	<div class="form-group">
+	<div class="form-group my-3">
 		<label>
-			Connection Info<br>
+			اطلاعات اتصال<br>
 			<small class="form-text text-muted">
-				Use this to specify a link, hostname, or connection instructions for your challenge.
+				از این برای مشخص کردن لینک، نام میزبان یا دستورالعمل‌های اتصال برای چالش خود استفاده کنید.
 			</small>
 		</label>
 		<input type="text" class="form-control chal-connection-info" name="connection_info" value="{{ challenge.connection_info | default('', true) }}">
@@ -59,11 +59,11 @@
 	{% endblock %}
 
 	{% block value %}
-	<div class="form-group">
+	<div class="form-group my-3">
 		<label for="value">
-			Value<br>
+			مقدار<br>
 			<small class="form-text text-muted">
-				This is how many points teams will receive once they solve this challenge.
+				این تعداد امتیازی است که تیم‌ها پس از حل این چالش دریافت خواهند کرد.
 			</small>
 		</label>
 		<input type="number" class="form-control chal-value" name="value" value="{{ challenge.value }}" required>
@@ -71,10 +71,10 @@
 	{% endblock %}
 
 	{% block max_attempts %}
-	<div class="form-group">
+	<div class="form-group my-3">
 		<label>
-			Max Attempts<br>
-			<small class="form-text text-muted">Maximum amount of attempts users receive. Leave at 0 for unlimited.</small>
+			حداکثر تلاش<br>
+			<small class="form-text text-muted">حداکثر تعداد دفعات تلاش برای کاربران. برای نامحدود بودن، عدد ۰ را بگذارید.</small>
 		</label>
 
 		<input type="number" class="form-control chal-attempts" name="max_attempts" value="{{ challenge.max_attempts }}">
@@ -82,10 +82,10 @@
 	{% endblock %}
 
 	{% block state %}
-	<div class="form-group">
+	<div class="form-group my-3">
 		<label>
-			State<br>
-			<small class="form-text text-muted">Changes the state of the challenge (e.g. visible, hidden)</small>
+			حالت<br>
+			<small class="form-text text-muted">وضعیت چالش را تغییر می‌دهد (مثلاً قابل مشاهده، پنهان)</small>
 		</label>
 
 		<select class="form-control custom-select" name="state">
@@ -96,9 +96,9 @@
 	{% endblock %}
 
 	{% block submit %}
-	<div>
+	<div my-3>
 		<button class="btn btn-success btn-outlined float-right" type="submit">
-			Update
+			به‌روزرسانی
 		</button>
 	</div>
 	{% endblock %}

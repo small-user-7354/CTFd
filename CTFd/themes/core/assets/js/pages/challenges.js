@@ -20,9 +20,9 @@ const loadChal = id => {
 
   if (chal.type === "hidden") {
     ezAlert({
-      title: "Challenge Hidden!",
-      body: "You haven't unlocked this challenge yet!",
-      button: "Got it!"
+      title: "چالش هنوز پنهان است!",
+      body: "هنوز قفل چالش را باز نکرده‌اید!",
+      button: "گرفتم!"
     });
     return;
   }
@@ -401,16 +401,16 @@ setInterval(update, 300000); // Update every 5 minutes.
 
 const displayHint = data => {
   ezAlert({
-    title: "Hint",
+    title: "نکته",
     body: data.html,
-    button: "Got it!"
+    button: "گرفتم!"
   });
 };
 
 const displayUnlock = id => {
   ezQuery({
-    title: "Unlock Hint?",
-    body: "Are you sure you want to open this hint?",
+    title: "نکته را آنلاک کنم?",
+    body: "آیا مطمئنید؟",
     success: () => {
       const params = {
         target: id,
@@ -426,9 +426,9 @@ const displayUnlock = id => {
         }
 
         ezAlert({
-          title: "Error",
+          title: "ارور!",
           body: response.errors.score,
-          button: "Got it!"
+          button: "گرفتم!"
         });
       });
     }

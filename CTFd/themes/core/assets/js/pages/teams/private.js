@@ -60,9 +60,9 @@ $(() => {
                 window.location.reload();
               } else {
                 ezAlert({
-                  title: "Error",
+                  title: "ارور",
                   body: response.errors[""].join(" "),
-                  button: "Got it!"
+                  button: "گرفتم!"
                 });
               }
             });

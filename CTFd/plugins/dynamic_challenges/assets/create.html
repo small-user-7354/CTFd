@@ -10,15 +10,15 @@
 
 {% block value %}
 <div class="form-group">
-	<label for="value">Initial Value<br>
+	<label for="value">مقدار اولیه<br>
 		<small class="form-text text-muted">
 			این چالش در ابتدا ارزش چند امتیاز دارد.
 		</small>
 	</label>
-	<input type="number" class="form-control" name="initial" placeholder="Enter value" required>
+	<input type="number" class="form-control" name="initial" placeholder="مقدار را وارد کنید" style="text-align: right;" required>
 </div>
 
-<div class="form-group">
+<div class="form-group my-3">
 	<label for="value">Decay Function<br>
 		<small class="form-text text-muted">
 			<span>چگونه مقدار پویا بر اساس مقدار Decay محاسبه خواهد شد</span>
@@ -28,13 +28,14 @@
 			</ul>
 		</small>
 	</label>
+	<br/>
 	<select name="function" class="custom-select">
-		<option value="linear">Linear</option>
-		<option value="logarithmic">Logarithmic</option>
+		<option value="linear">خطی</option>
+		<option value="logarithmic">لگاریتمیک</option>
 	</select>
 </div>
 
-<div class="form-group">
+<div class="form-group my-3">
 	<label for="value">Decay<br>
 		<small class="form-text text-muted">
 			<span>The decay value is used differently depending on the above Decay Function</span>
@@ -45,16 +46,16 @@
 			</ul>
 		</small>
 	</label>
-	<input type="number" class="form-control" name="decay" min="1" placeholder="Enter Decay value" required>
+	<input type="number" class="form-control" name="decay" min="1" placeholder="مقدار decay را وارد کنید" style="text-align: right;" required>
 </div>
 
 <div class="form-group">
-	<label for="value">Minimum Value<br>
+	<label for="value">حداقل مقدار<br>
 		<small class="form-text text-muted">
-			This is the lowest that the challenge can be worth
+			این کمترین چیزی است که چالش می تواند ارزش داشته باشد
 		</small>
 	</label>
-	<input type="number" class="form-control" name="minimum" placeholder="Enter minimum value" required>
+	<input type="number" class="form-control" name="minimum" placeholder="حداقل مقدار" style="text-align: right;" required>
 </div>
 {% endblock %}
 

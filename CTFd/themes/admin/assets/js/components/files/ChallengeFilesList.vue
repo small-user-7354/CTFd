@@ -3,8 +3,8 @@
     <table id="filesboard" class="table table-striped">
       <thead>
         <tr>
-          <td class="text-center"><b>File</b></td>
-          <td class="text-center"><b>Settings</b></td>
+          <td class="text-center"><b>فایل</b></td>
+          <td class="text-center"><b>تنظیمات</b></td>
         </tr>
       </thead>
       <tbody>
@@ -34,7 +34,7 @@
 
     <div class="col-md-12 mt-3">
       <form method="POST" ref="FileUploadForm" @submit.prevent="addFiles">
-        <div class="form-group">
+        <div class="form-group my-3">
           <input
             class="form-control-file"
             id="file"
@@ -44,16 +44,16 @@
             type="file"
           />
           <sub class="text-muted">
-            Attach multiple files using Control+Click or Cmd+Click.
+            می‌توایند یک یا چند فایل انتخاب کنید.
           </sub>
         </div>
-        <div class="form-group">
+        <div class="form-group my-3 ">
           <input
             class="btn btn-success float-right"
             id="_submit"
             name="_submit"
             type="submit"
-            value="Upload"
+            value="آپلود"
           />
         </div>
       </form>

@@ -19,9 +19,9 @@
     <table id="flagsboard" class="table table-striped">
       <thead>
         <tr>
-          <td class="text-center"><b>Type</b></td>
-          <td class="text-center"><b>Flag</b></td>
-          <td class="text-center"><b>Settings</b></td>
+          <td class="text-center"><b>نوع</b></td>
+          <td class="text-center"><b>پرچم</b></td>
+          <td class="text-center"><b>تنظیمات</b></td>
         </tr>
       </thead>
       <tbody>
@@ -55,7 +55,7 @@
         class="btn btn-success d-inline-block float-right"
         @click="addFlag()"
       >
-        Create Flag
+        ساخت پرچم  
       </button>
     </div>
   </div>
@@ -126,7 +126,7 @@ export default {
       $(modal).modal();
     },
     deleteFlag: function (flag_id) {
-      if (confirm("Are you sure you'd like to delete this flag?")) {
+      if (confirm("آیا مطمئن هستید که می‌خواهید این پرچم را حذف کنید؟")) {
         CTFd.fetch(`/api/v1/flags/${flag_id}`, {
           method: "DELETE",
         })

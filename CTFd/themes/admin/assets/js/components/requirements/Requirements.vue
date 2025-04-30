@@ -1,7 +1,7 @@
 <template>
   <div>
     <form @submit.prevent="updateRequirements">
-      <div class="form-group scrollbox">
+      <div class="form-group my-3 scrollbox">
         <transition-group name="flip-list">
           <div
             class="form-check"
@@ -36,26 +36,26 @@
         </transition-group>
       </div>
 
-      <div class="form-group">
+      <div class="form-group my-3">
         <label>
-          <b>Behavior if not unlocked</b>
+          <b>رفتار در صورت عدم باز شدن قفل</b>
         </label>
         <select
           class="form-control custom-select"
           name="anonymize"
           v-model="selectedAnonymize"
         >
-          <option :value="false">Hidden</option>
-          <option :value="true">Anonymized</option>
+          <option :value="false">پنهان</option>
+          <option :value="true">ناشناس</option>
         </select>
       </div>
 
-      <div class="form-group">
+      <div class="form-group my-3">
         <button
           class="btn btn-success float-right"
           :disabled="!newRequirements"
         >
-          Save
+          ذخیره
         </button>
       </div>
     </form>

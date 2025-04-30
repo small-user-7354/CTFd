@@ -1,12 +1,12 @@
 <template>
   <div>
     <form @submit.prevent="updateNext">
-      <div class="form-group">
+      <div class="form-group my-3">
         <label>
-          Next Challenge
+          چالش بعدی
           <br />
           <small class="text-muted"
-            >Challenge to recommend after solving this challenge</small
+            >چالشی برای توصیه پس از حل این چالش</small
           >
         </label>
         <select class="form-control custom-select" v-model="selected_id">
@@ -20,12 +20,12 @@
           </option>
         </select>
       </div>
-      <div class="form-group">
+      <div class="form-group my-3">
         <button
           class="btn btn-success float-right"
           :disabled="!updateAvailable"
         >
-          Save
+          ذخیره
         </button>
       </div>
     </form>

@@ -7,13 +7,13 @@
       </h5>
     </div>
 
-    <div class="form-group">
+    <div class="form-group my-3">
       <label>
-        Topic
+        موضوعات
         <br />
-        <small class="text-muted">Type topic and press Enter</small>
+        <small class="text-muted">موضوع را بنویسید</small>
       </label>
-      <input
+      <input 
         id="tags-add-input"
         maxlength="255"
         type="text"

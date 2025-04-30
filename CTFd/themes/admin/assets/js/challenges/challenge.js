@@ -160,10 +160,8 @@ $(() => {
 
   $(".delete-challenge").click(function (_event) {
     ezQuery({
-      title: "Delete Challenge",
-      body: "Are you sure you want to delete {0}".format(
-        "<strong>" + htmlEntities(window.CHALLENGE_NAME) + "</strong>",
-      ),
+      title: "حذف چالش",
+      body: " آیا مطمئن هستید که می‌خواهید این چالش را حذف کنید؟",
       success: function () {
         CTFd.fetch("/api/v1/challenges/" + window.CHALLENGE_ID, {
           method: "DELETE",
@@ -191,8 +189,8 @@ $(() => {
     }).then(function (data) {
       if (data.success) {
         ezToast({
-          title: "Success",
-          body: "Your challenge has been updated!",
+          title: "چالش به روز شد",
+          body: "چالش با موفقیت به روز شد",
         });
       }
     });

@@ -4,9 +4,9 @@
 {% endblock %}
 
 {% block content %}
-<div class="jumbotron">
+<div class="jumbotron my-5">
 	<div class="container">
-		<h1>Create Challenge</h1>
+		<h1>ساخت چالش</h1>
 	</div>
 </div>
 
@@ -14,19 +14,19 @@
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title">Options</h5>
+				<h5 class="modal-title">تنظیمات</h5>
 				<button type="button" class="close" data-dismiss="modal">
 					<span>&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
 				<form method="POST" enctype="multipart/form-data">
-					<div class="form-group">
+					<div class="form-group my-3">
 						<div class="row">
 							<div class="col-md-8">
 								<label>
-									Flag:<br>
-									<small class="form-text text-muted">Static flag for your challenge</small>
+									پرچم:<br>
+									<small class="form-text text-muted">پرچم استاتیک برای چالش</small>
 								</label>
 								<input type="text" class="form-control" name="flag">
 							</div>
@@ -36,36 +36,36 @@
 									<small class="form-text text-muted">&nbsp;</small>
 								</label>
 								<select class="form-control custom-select w-100" name="flag_data">
-									<option value="">Case Sensitive</option>
-									<option value="case_insensitive">Case Insensitive</option>
+									<option value="">حساس به حروف کوچک و بزرگ</option>
+									<option value="case_insensitive">بی‌تفاوت به حروف کوچک و بزرگ</option>
 								</select>
 							</div>
 						</div>
 						<input type="hidden" name="flag_type" value="static">
 					</div>
-					<div class="form-group">
+					<div class="form-group my-3">
 						<div class="form-group">
 							<label>
-								Files:
-								<small class="form-text text-muted">Files distributed along with your challenge</small>
+								فایل‌ها:
+								<small class="form-text text-muted">فایل‌هایی که همراه با چالش شما توزیع می‌شوند</small>
 							</label>
 							<input class="form-control-file" type="file" name="file" multiple="multiple">
-							<sub class="text-muted">Attach multiple files using Control+Click or Cmd+Click</sub>
+							<sub class="text-muted">چندین فایل را با استفاده از Control+Click یا Cmd+Click ضمیمه کنید</sub>
 						</div>
 					</div>
-					<div class="form-group">
+					<div class="form-group my-3">
 						<label>
-							State<br>
-							<small class="form-text text-muted">Should the challenge be visible to users</small>
+							حالت<br>
+							<small class="form-text text-muted">آیا چالش باید برای کاربران قابل مشاهده باشد</small>
 						</label>
 						<select class="form-control custom-select" name="state">
-							<option value="visible">Visible</option>
-							<option value="hidden" selected>Hidden</option>
+							<option value="visible">قابل دیدن</option>
+							<option value="hidden" selected>پنهان</option>
 						</select>
 					</div>
 					<input id="challenge_id" type="hidden" name="challenge_id">
-					<div class="form-group">
-						<button class="btn btn-primary float-right create-challenge-submit" type="submit">Finish</button>
+					<div class="form-group my-3">
+						<button class="btn btn-primary float-right create-challenge-submit" type="submit">پایان</button>
 					</div>
 				</form>
 			</div>
@@ -77,7 +77,7 @@
 	<div class="row">
 		<div class="col-md-3 offset-md-1">
 			<h5 class="text-center pb-3">
-				Challenge Types
+				انتخاب نوع چالش
 			</h5>
 			<div id="create-chals-select">
 				{% for type in types %}

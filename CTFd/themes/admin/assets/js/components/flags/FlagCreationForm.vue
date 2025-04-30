@@ -47,7 +47,7 @@
               type="submit"
               v-if="createForm"
             >
-              Create Flag
+              ساخت پرچم
             </button>
           </form>
         </div>

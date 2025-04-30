@@ -23,10 +23,10 @@
       <thead>
         <tr>
           <td class="text-center"><b>ID</b></td>
-          <td class="text-center"><b>Title</b></td>
-          <td class="text-center"><b>Hint</b></td>
-          <td class="text-center"><b>Cost</b></td>
-          <td class="text-center"><b>Settings</b></td>
+          <td class="text-center"><b>عنوان</b></td>
+          <td class="text-center"><b>راهنمایی</b></td>
+          <td class="text-center"><b>هزینه</b></td>
+          <td class="text-center"><b>تنظیمات</b></td>
         </tr>
       </thead>
       <tbody>
@@ -54,7 +54,7 @@
     </table>
     <div class="col-md-12">
       <button class="btn btn-success float-right" @click="addHint">
-        Create Hint
+        ساخت‌ راهنمایی
       </button>
     </div>
   </div>

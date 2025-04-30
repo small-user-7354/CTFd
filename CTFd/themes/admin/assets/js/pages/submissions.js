@@ -14,8 +14,8 @@ function deleteCorrectSubmission(_event) {
   const row = $(this).parent().parent();
 
   ezQuery({
-    title: "Delete Submission",
-    body: "Are you sure you want to delete correct submission from {0} for challenge {1}".format(
+    title: "حذف سابمیشن",
+    body: "آیا مطمئن هستید که می‌خواهید ارسال صحیح را از {0} برای چالش {1} حذف کنید؟".format(
       "<strong>" + htmlEntities(team_name) + "</strong>",
       "<strong>" + htmlEntities(chal_name) + "</strong>",
     ),
@@ -38,8 +38,8 @@ function deleteSelectedSubmissions(_event) {
   let target = submissionIDs.length === 1 ? "submission" : "submissions";
 
   ezQuery({
-    title: "Delete Submissions",
-    body: `Are you sure you want to delete ${submissionIDs.length} ${target}?`,
+    title: "حذف ارسال‌ها",
+    body: `آیا مطمئنید برای حذف: ${submissionIDs.length} ${target}?`,
     success: function () {
       const reqs = [];
       for (var subId of submissionIDs) {
@@ -59,8 +59,8 @@ function correctSubmissions(_event) {
   let target = submissionIDs.length === 1 ? "submission" : "submissions";
 
   ezQuery({
-    title: "Correct Submissions",
-    body: `Are you sure you want to mark ${submissionIDs.length} ${target} correct?`,
+    title: "تصحیح سابمیشن",
+    body: `آیا مطمئنید برای مارک کردن ${submissionIDs.length} ${target} به عنوان پاسخ درست?`,
     success: function () {
       const reqs = [];
       for (var subId of submissionIDs) {

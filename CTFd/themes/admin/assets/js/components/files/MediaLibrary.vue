@@ -6,7 +6,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h3 class="text-center">Media Library</h3>
+                <h3 class="text-center">کتابخانه رسانه</h3>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@
                   </div>
                 </div>
                 <div class="col-md-6" id="media-library-details">
-                  <h4 class="text-center">Media Details</h4>
+                  <h4 class="text-center">اطلاعات مدیا</h4>
                   <div id="media-item">
                     <div class="text-center" id="media-icon">
                       <div v-if="this.selectedFile">
@@ -121,7 +121,7 @@
                             data-placement="top"
                             title="Insert link into editor"
                           >
-                            Insert
+                            اضافه‌کردن
                           </button>
                         </div>
                         <div class="col-md-3">
@@ -131,7 +131,7 @@
                             id="media-download"
                             data-toggle="tooltip"
                             data-placement="top"
-                            title="Download file"
+                            title="دانلود فایل"
                           >
                             <i class="fas fa-download"></i>
                           </button>
@@ -143,7 +143,7 @@
                             id="media-delete"
                             data-toggle="tooltip"
                             data-placement="top"
-                            title="Delete file"
+                            title="پاک‌کردن فایل"
                           >
                             <i class="far fa-trash-alt"></i>
                           </button>
@@ -160,7 +160,7 @@
             <div class="form-row pt-3">
               <div class="col">
                 <div class="form-group">
-                  <label for="media-files">Upload Files</label>
+                  <label for="media-files">آپلود فایل</label>
                   <input
                     type="file"
                     name="file"
@@ -169,24 +169,20 @@
                     multiple
                   />
                   <sub class="help-block">
-                    Attach multiple files using Control+Click or Cmd+Click.
+                    می‌ توانید چند فایل را انتخاب ‌کنید. 
                   </sub>
                 </div>
               </div>
               <div class="col">
                 <div class="form-group">
-                  <label>Upload File Location</label>
+                  <label>آدرس فایل</label>
                   <input
                     class="form-control"
                     type="text"
                     name="location"
-                    placeholder="Location"
+                    placeholder="لوکیشن"
                   />
-                  <sub class="help-block">
-                    Route where file will be accessible (if not provided a
-                    random folder will be used). <br />
-                    Provide as <code>directory/filename.ext</code>
-                  </sub>
+
                 </div>
               </div>
             </div>
@@ -200,7 +196,7 @@
               type="submit"
               class="btn btn-primary media-upload-button"
             >
-              Upload
+              آپلود
             </button>
           </div>
         </div>

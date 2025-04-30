@@ -11,8 +11,8 @@ function deleteSelectedChallenges(_event) {
   let target = challengeIDs.length === 1 ? "challenge" : "challenges";
 
   ezQuery({
-    title: "Delete Challenges",
-    body: `Are you sure you want to delete ${challengeIDs.length} ${target}?`,
+    title: "حذف چالش‌ها",
+    body: `آیا مطمئنید که میخواهید چالش را حذف کنید؟ ${challengeIDs.length} ${target}?`,
     success: function () {
       const reqs = [];
       for (var chalID of challengeIDs) {
@@ -35,28 +35,28 @@ function bulkEditChallenges(_event) {
   });
 
   ezAlert({
-    title: "Edit Challenges",
+    title: "ویرایش چالش‌ها",
     body: $(`
     <form id="challenges-bulk-edit">
       <div class="form-group">
-        <label>Category</label>
+        <label>کتگوری</label>
         <input type="text" name="category" data-initial="" value="">
       </div>
       <div class="form-group">
-        <label>Value</label>
+        <label>مقدار</label>
         <input type="number" name="value" data-initial="" value="">
       </div>
       <div class="form-group">
-        <label>State</label>
+        <label>حالت</label>
         <select name="state" data-initial="">
           <option value="">--</option>
-          <option value="visible">Visible</option>
-          <option value="hidden">Hidden</option>
+          <option value="visible">قابل مشاهده</option>
+          <option value="hidden">پنهان</option>
         </select>
       </div>
     </form>
     `),
-    button: "Submit",
+    button: "ارسال",
     success: function () {
       let data = $("#challenges-bulk-edit").serializeJSON(true);
       const reqs = [];

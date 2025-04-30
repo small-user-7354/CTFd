@@ -11,11 +11,11 @@
       </span>
     </div>
 
-    <div class="form-group">
+    <div class="form-group my-3">
       <label
-        >Tag
+        >تگ 
         <br />
-        <small class="text-muted">Type tag and press Enter</small>
+        <small class="text-muted">تگ را بنویسید</small>
       </label>
       <input
         id="tags-add-input"

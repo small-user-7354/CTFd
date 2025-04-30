@@ -6,15 +6,15 @@ import { ezAlert, ezQuery } from "../ezq";
 
 const error_template =
   '<div class="alert alert-danger alert-dismissable" role="alert">\n' +
-  '  <span class="sr-only">Error:</span>\n' +
+  '  <span class="sr-only">ارور:</span>\n' +
   "  {0}\n" +
   '  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>\n' +
   "</div>";
 
 const success_template =
   '<div class="alert alert-success alert-dismissable submit-row" role="alert">\n' +
-  "  <strong>Success!</strong>\n" +
-  "   Your profile has been updated\n" +
+  "  <strong>موفقیت!</strong>\n" +
+  "   پروفایل شما آپدیت شد\n" +
   '  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>\n' +
   "</div>";
 
@@ -84,9 +84,9 @@ function tokenGenerate(event) {
           copyToClipboard(event, "#user-token-result");
         });
         ezAlert({
-          title: "API Key Generated",
+          title: "API Key تولید شد",
           body: body,
-          button: "Got it!",
+          button: "گرفتم!",
           large: true
         });
       }
@@ -99,8 +99,8 @@ function deleteToken(event) {
   const id = $elem.data("token-id");
 
   ezQuery({
-    title: "Delete Token",
-    body: "Are you sure you want to delete this token?",
+    title: "توکن حذف شود",
+    body: "آیا مطمئن هستید؟",
     success: function() {
       CTFd.fetch("/api/v1/tokens/" + id, {
         method: "DELETE"
