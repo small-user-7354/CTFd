@@ -11,9 +11,9 @@ class SubmissionSearchForm(BaseForm):
         choices=[
             ("provided", "Provided"),
             ("id", "ID"),
-            ("account_id", "Account ID"),
-            ("challenge_id", "Challenge ID"),
-            ("challenge_name", "Challenge Name"),
+            ("account_id", "اکانت ID"),
+            ("challenge_id", "چالش ID"),
+            ("challenge_name", "نام چالش"),
         ],
         default="provided",
         validators=[InputRequired()],

@@ -233,8 +233,8 @@ function correctSubmissions(_event) {
   let target = submissionIDs.length === 1 ? "submission" : "submissions";
 
   ezQuery({
-    title: "Correct Submissions",
-    body: `Are you sure you want to mark ${submissionIDs.length} ${target} correct?`,
+    title: "ثبت ارسال به عنوان درست",
+    body: `آیا مطمئنید؟`,
     success: function () {
       const reqs = [];
       for (var subId of submissionIDs) {
@@ -281,8 +281,8 @@ function deleteSelectedSubmissions(event, target) {
   let target_string = submissionIDs.length === 1 ? type : type + "s";
 
   ezQuery({
-    title: `Delete ${title}`,
-    body: `Are you sure you want to delete ${submissionIDs.length} ${target_string}?`,
+    title: `حذف ${title}`,
+    body: `آیا مطمئنید؟`,
     success: function () {
       const reqs = [];
       for (var subId of submissionIDs) {
@@ -302,8 +302,8 @@ function deleteSelectedAwards(_event) {
   let target = awardIDs.length === 1 ? "award" : "awards";
 
   ezQuery({
-    title: `Delete Awards`,
-    body: `Are you sure you want to delete ${awardIDs.length} ${target}?`,
+    title: `حذف جوایز`,
+    body: `آیا مطمئنید؟ `,
     success: function () {
       const reqs = [];
       for (var awardID of awardIDs) {
