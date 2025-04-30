@@ -15,7 +15,7 @@
           type="button"
           @click="addBracket()"
         >
-          Add New Bracket
+          اضافه‌کردن براکت جدید
         </button>
       </div>
     </div>

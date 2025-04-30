@@ -262,7 +262,7 @@ function importCSV(event) {
 
   let pg = ezProgressBar({
     width: 0,
-    title: "Upload Progress",
+    title: "آپلود",
   });
 
   $.ajax({
@@ -331,7 +331,7 @@ function importConfig(event) {
 
   let pg = ezProgressBar({
     width: 0,
-    title: "Upload Progress",
+    title: "آپلود",
   });
 
   $.ajax({

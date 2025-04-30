@@ -17,7 +17,7 @@
           type="button"
           @click="addField()"
         >
-          Add New Field
+          اضافه کردن فیلد جدید
         </button>
       </div>
     </div>

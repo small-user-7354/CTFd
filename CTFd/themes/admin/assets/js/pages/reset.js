@@ -5,8 +5,8 @@ import { ezQuery } from "../compat/ezq";
 function reset(event) {
   event.preventDefault();
   ezQuery({
-    title: "Reset CTF?",
-    body: "Are you sure you want to reset your CTFd instance?",
+    title: "CTF را دوباره تنظیم کنید؟",
+    body: "آیا مطمئن هستید که می‌خواهید نمونه CTFd خود را بازنشانی کنید؟",
     success: function () {
       $("#reset-ctf-form").off("submit").submit();
     },

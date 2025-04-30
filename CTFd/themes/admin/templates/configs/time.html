@@ -3,17 +3,17 @@
 		<ul class="nav nav-tabs mb-3">
 			<li class="nav-item">
 				<a class="nav-link active" href="#start-date" aria-controls="start-date" role="tab" data-toggle="tab">
-					Start Time
+					زمان شروع
 				</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#end-date" aria-controls="end-date" role="tab" data-toggle="tab">
-					End Time
+					زمان پایان
 				</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#freeze-date" aria-controls="freeze-date" role="tab" data-toggle="tab">
-					Freeze Time
+					زمان فریز شدن
 				</a>
 			</li>
 		</ul>
@@ -22,57 +22,56 @@
 			<div role="tabpanel" class="tab-pane active" id="start-date">
 				<div class="row" id="start-date">
 					<div class="col-md-12">
-						<p>This is the time when the competition will begin. Challenges will automatically
-							unlock and users will be able to submit answers.</p>
-						<sub class="text-muted text-right mb-3">* All time fields required</sub>
+						<p>این زمانی است که مسابقه شروع می‌شود. چالش‌ها به طور خودکار باز می‌شوند و کاربران می‌توانند پاسخ‌ها را ارسال کنند.</p>
+						<sub class="text-muted text-right mb-3">* تمام فیلدهای زمان مورد نیاز است </sub>
 					</div>
 
 					<!-- TODO: these time fields should probably be required, but needs movement of <form> -->
-					<div class="form-group col-md-2">
-						<label for="start-month">Month:</label>
+					<div class="form-group my-3 col-md-2">
+						<label for="start-month">ماه:</label>
 						<input class="form-control start-date" id='start-month' min="0" max="12" type='number'>
 					</div>
 
-					<div class="form-group col-md-2">
-						<label for="start-day">Day:</label>
+					<div class="form-group my-3 col-md-2">
+						<label for="start-day">روز:</label>
 						<input class="form-control start-date" id='start-day' min="0" max="31" type='number'>
 					</div>
 
-					<div class="form-group col-md-3">
-						<label for="start-year">Year:</label>
+					<div class="form-group my-3 col-md-3">
+						<label for="start-year">سال:</label>
 						<input class="form-control start-date" id='start-year' type='number'>
 					</div>
 
-					<div class="form-group col-md-2">
-						<label for="start-hour">Hour:</label>
+					<div class="form-group my-3 col-md-2">
+						<label for="start-hour">ساعت:</label>
 						<input class="form-control start-date" id='start-hour' min="0" max="23" type='number'>
 					</div>
 
-					<div class="form-group col-md-3">
-						<label for="start-minute">Minute:</label>
+					<div class="form-group my-3 col-md-3">
+						<label for="start-minute">دقیقه:</label>
 						<input class="form-control start-date" id='start-minute' min="0" max="59" type='number'>
 					</div>
 
 					<!-- TODO: Better Timezone options (e.g. with UTC offset info like "UTC+1")-->
-					<div class="form-group col-md-12">
-						<label for="start-timezone">Timezone:</label>
+					<div class="form-group my-3 col-md-12">
+						<label for="start-timezone">منطقه‌ زمانی:</label>
 						<select class="form-control custom-select start-date" id="start-timezone">
 						</select>
 					</div>
 
 					<!-- TODO: Clarify via UI that user cannot touch these fields -->
-					<div class="form-group col-md-12">
-						<label for="start-local">Local Time:</label>
+					<div class="form-group my-3 col-md-12">
+						<label for="start-local">ساعت محلی:</label>
 						<input class="form-control" id='start-local' type='text' readonly>
 					</div>
 
-					<div class="form-group col-md-12">
-						<label for="start-zonetime">Timezone Time:</label>
+					<div class="form-group my-3 col-md-12">
+						<label for="start-zonetime">زمان منطقه زمانی:</label>
 						<input class="form-control" id='start-zonetime' type='text' readonly>
 					</div>
 
-					<div class="form-group col-md-12">
-						<label>UTC Timestamp:</label>
+					<div class="form-group my-3 col-md-12">
+						<label>منطقه زمانی UTC:</label>
 						<input class="form-control" id='start' name='start' type='number'
 							{% if start is defined and start != None %}value="{{ start }}"{% endif %} readonly>
 					</div>
@@ -81,69 +80,68 @@
 			<div role="tabpanel" class="tab-pane" id="end-date">
 				<div class="row" id="end-date">
 					<div class="col-md-12">
-						<p>This is the time when the competition will end. Challenges will automatically
-							close and users won't be able to submit answers.</p>
-						<sub class="text-muted text-right mb-3">* All time fields required</sub>
+						<p>این زمانی است که مسابقه به پایان می‌رسد. چالش‌ها به طور خودکار بسته می‌شوند و کاربران نمی‌توانند پاسخ‌ها را ارسال کنند.</p>
+						<sub class="text-muted text-right mb-3">* تمام فیلدهای زمان مورد نیاز است</sub>
 					</div>
 
-					<div class="form-group col-md-2">
-						<label for="end-month">Month:</label>
+					<div class="form-group my-3 col-md-2">
+						<label for="end-month">ماه:</label>
 						<input class="form-control end-date" id='end-month' min="0" max="12" type='number'>
 					</div>
 
-					<div class="form-group col-md-2">
-						<label for="end-day">Day:</label>
+					<div class="form-group my-3 col-md-2">
+						<label for="end-day">روز:</label>
 						<input class="form-control end-date" id='end-day' min="0" max="31" type='number'>
 					</div>
 
-					<div class="form-group col-md-4">
-						<label for="end-year">Year:</label>
+					<div class="form-group my-3 col-md-4">
+						<label for="end-year">سال:</label>
 						<input class="form-control end-date" id='end-year' type='number'>
 					</div>
 
-					<div class="form-group col-md-2">
-						<label for="end-hour">Hour:</label>
+					<div class="form-group my-3 col-md-2">
+						<label for="end-hour">ساعت:</label>
 						<input class="form-control end-date" id='end-hour' min="0" max="23" type='number'>
 					</div>
 
-					<div class="form-group col-md-2">
-						<label for="end-minute">Minute:</label>
+					<div class="form-group my-3 col-md-2">
+						<label for="end-minute">دقیقه:</label>
 						<input class="form-control end-date" id='end-minute' min="0" max="59" type='number'>
 					</div>
 
-					<div class="form-group col-md-12">
-						<label for="end-timezone">Timezone:</label>
+					<div class="form-group my-3 col-md-12">
+						<label for="end-timezone">منطقه زمانی:</label>
 						<select class="form-control custom-select end-date" id="end-timezone">
 						</select>
 					</div>
 
 					<br>
 
-					<div class="form-group col-md-12">
+					<div class="form-group my-3 col-md-12">
 						<div class="form-check pl-0">
 							<label>
 								<input id="view_after_ctf" name="view_after_ctf" type="checkbox" {% if view_after_ctf %}checked{% endif %}>
-								View After CTF
+								مشاهده پس از CTF
 								<small class="form-text text-muted">
-									Allows challenges to be viewed after the End Time, however no new submissions will be recorded.<br>
-									For participants to be able to submit after End Time but not alter the scoreboard, configure Freeze Time to be your End Time.
+									امکان مشاهده چالش‌ها پس از زمان پایان را فراهم می‌کند، اما هیچ ارسال جدیدی ثبت نخواهد شد.<br>
+برای اینکه شرکت‌کنندگان بتوانند پس از زمان پایان ارسال کنند اما تابلوی امتیازات را تغییر ندهند، زمان توقف را به عنوان زمان پایان خود تنظیم کنید.
 								</small>
 							</label>
 						</div>
 					</div>
 
-					<div class="form-group col-md-12">
-						<label for="end-local">Local Time:</label>
+					<div class="form-group my-3 col-md-12">
+						<label for="end-local">زمان محلی:</label>
 						<input class="form-control" id='end-local' type='text' readonly>
 					</div>
 
-					<div class="form-group col-md-12">
-						<label for="end-zonetime">Timezone Time:</label>
+					<div class="form-group my-3 col-md-12">
+						<label for="end-zonetime">زمان منطقه زمانی:</label>
 						<input class="form-control" id='end-zonetime' type='text' readonly>
 					</div>
 
-					<div class="form-group col-md-12">
-						<label for="end">UTC Timestamp:</label>
+					<div class="form-group my-3 col-md-12">
+						<label for="end">زمان UTC:</label>
 						<input class="form-control" id='end' name='end' type='number'
 							{% if end is defined and end != None %}value="{{ end }}"{% endif %} readonly>
 					</div>
@@ -153,56 +151,54 @@
 				<div class="row" id="freeze-date">
 					<div class="col-md-12">
 						<!-- TODO: Rephrase -->
-						<p>Freeze time specifies the timestamp that the competition will be frozen to.
-							All solves before the freeze time will be shown, but new solves won't be shown to
-							users. </p>
-						<sub class="text-muted text-right mb-3">* All time fields required</sub>
+						<p>زمان توقف، مهر زمانی را مشخص می‌کند که مسابقه تا آن زمان متوقف می‌شود. تمام حل‌های قبل از زمان توقف نمایش داده می‌شوند، اما حل‌های جدید به کاربران نشان داده نمی‌شوند. </p>
+						<sub class="text-muted text-right mb-3">* تمام فیلدهای زمان مورد نیاز است</sub>
 					</div>
 
-					<div class="form-group col-md-2">
-						<label for="freeze-month">Month:</label>
+					<div class="form-group my-3 col-md-2">
+						<label for="freeze-month">ماه:</label>
 						<input class="form-control freeze-date" id='freeze-month' min="0" max="12" type='number'>
 					</div>
 
-					<div class="form-group col-md-2">
-						<label for="freeze-day">Day:</label>
+					<div class="form-group my-3 col-md-2">
+						<label for="freeze-day">روز:</label>
 						<input class="form-control freeze-date" id='freeze-day' min="0" max="31" type='number'>
 					</div>
 
-					<div class="form-group col-md-4">
-						<label for="freeze-year">Year:</label>
+					<div class="form-group my-3 col-md-4">
+						<label for="freeze-year">سال:</label>
 						<input class="form-control freeze-date" id='freeze-year' type='number'>
 					</div>
 
-					<div class="form-group col-md-2">
-						<label for="freeze-hour">Hour:</label>
+					<div class="form-group my-3 col-md-2">
+						<label for="freeze-hour">ساعت:</label>
 						<input class="form-control freeze-date" id='freeze-hour' min="0" max="23" type='number'>
 					</div>
 
-					<div class="form-group col-md-2">
-						<label for="freeze-minute">Minute:</label>
+					<div class="form-group my-3 col-md-2">
+						<label for="freeze-minute">دقیقه:</label>
 						<input class="form-control freeze-date" id='freeze-minute' min="0" max="59" type='number'>
 					</div>
 
-					<div class="form-group col-md-12">
-						<label for="freeze-timezone">CTF Timezone:</label>
+					<div class="form-group my-3 col-md-12">
+						<label for="freeze-timezone">منطقه‌زمانی CTF:</label>
 						<select class="form-control custom-select freeze-date" id="freeze-timezone">
 						</select>
 					</div>
 
 					<!-- TODO: Clarify -->
-					<div class="form-group col-md-12">
-						<label for="freeze-local">Local Time:</label>
+					<div class="form-group my-3 col-md-12">
+						<label for="freeze-local">زمان محلی:</label>
 						<input class="form-control" id='freeze-local' type='text' readonly>
 					</div>
 
-					<div class="form-group col-md-12">
-						<label for="freeze-zonetime">Timezone Time:</label>
+					<div class="form-group my-3 col-md-12">
+						<label for="freeze-zonetime">زمان منطقه زمانی:</label>
 						<input class="form-control" id='freeze-zonetime' type='text' readonly>
 					</div>
 
-					<div class="form-group col-md-12">
-						<label for="freeze">UTC Timestamp:</label>
+					<div class="form-group my-3 col-md-12">
+						<label for="freeze">منطقه‌زمانی UTC:</label>
 						<input class="form-control" id='freeze' name='freeze' type='number'
 							{% if freeze is defined and freeze != None %}value="{{ freeze }}"{% endif %} readonly>
 					</div>
@@ -210,6 +206,6 @@
 			</div>
 		</div>
 
-		<button type="submit" class="btn btn-md btn-primary float-right">Update</button>
+		<button type="submit" class="btn btn-md btn-primary float-right">به‌روزرسانی</button>
 	</form>
 </div>

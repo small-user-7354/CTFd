@@ -13,50 +13,49 @@
 
     <div class="row">
       <div class="col-md-9">
-        <div class="form-group">
-          <label>Bracket Name</label>
+        <div class="form-group my-3">
+          <label>نام براکت</label>
           <input type="text" class="form-control" v-model.lazy="bracket.name" />
           <small class="form-text text-muted">
-            Bracket name (e.g. "Students", "Interns", "Engineers")
+            نام براکت (مثلاً «دانشجویان»، «کارآموزان»، «مهندسان»)
           </small>
         </div>
       </div>
 
       <div class="col-md-12">
-        <div class="form-group">
-          <label>Bracket Description</label>
+        <div class="form-group my-3">
+          <label>شرح براکت</label>
           <input
             type="text"
             class="form-control"
             v-model.lazy="bracket.description"
           />
-          <small class="form-text text-muted">Bracket Description</small>
+          <small class="form-text text-muted">شرح براکت</small>
         </div>
       </div>
 
       <div class="col-md-12">
-        <label>Bracket Type</label>
+        <label>نوع براکت</label>
         <select class="custom-select" v-model.lazy="bracket.type">
           <option></option>
-          <option value="users">Users</option>
-          <option value="teams">Teams</option>
+          <option value="users">کاربران</option>
+          <option value="teams">تیم‌ها</option>
         </select>
         <small class="form-text text-muted">
-          If you are using Team Mode and would like the bracket to apply to
-          entire teams instead of individuals, select Teams.
+           اگر از حالت تیمی استفاده می‌کنید و می‌خواهید این براکت به جای افراد، برای کل تیم‌ها اعمال شود، گزینه تیم‌ها را انتخاب کنید.
         </small>
       </div>
     </div>
 
-    <div class="row pb-3">
+    <div class="row py-3">
       <div class="col-md-12">
-        <div class="d-block">
+        <div class="d-block py-3">
           <button
-            class="btn btn-sm btn-success btn-outlined float-right"
+            class="btn btn btn-success btn-outlined float-right"
             type="button"
             @click="saveBracket()"
           >
-            Save
+            ذخیره
           </button>
         </div>
       </div>

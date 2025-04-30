@@ -20,9 +20,9 @@ DEFAULT_VERIFICATION_EMAIL_BODY = (
     "\n\n"
     "If the link is not clickable, try copying and pasting it into your browser."
 )
-DEFAULT_SUCCESSFUL_REGISTRATION_EMAIL_SUBJECT = "Successfully registered for {ctf_name}"
+DEFAULT_SUCCESSFUL_REGISTRATION_EMAIL_SUBJECT = "با موفقیت در {ctf_name} ثبت نام شد"
 DEFAULT_SUCCESSFUL_REGISTRATION_EMAIL_BODY = (
-    "You've successfully registered for {ctf_name}!"
+    "با موفقیت در {ctf_name} ثبت نام شد!"
 )
 DEFAULT_USER_CREATION_EMAIL_SUBJECT = "Message from {ctf_name}"
 DEFAULT_USER_CREATION_EMAIL_BODY = (

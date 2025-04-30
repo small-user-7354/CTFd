@@ -13,38 +13,38 @@
 
     <div class="row">
       <div class="col-md-3">
-        <div class="form-group">
-          <label>Field Type</label>
+        <div class="form-group my-3">
+          <label>نوع فیلد</label>
           <select
             class="form-control custom-select"
             v-model.lazy="field.field_type"
           >
-            <option value="text">Text Field</option>
-            <option value="boolean">Checkbox</option>
+            <option value="text">فیلد متنی</option>
+            <option value="boolean">چک‌ باکس</option>
           </select>
           <small class="form-text text-muted"
-            >Type of field shown to the user</small
+            >نوع فیلد نمایش داده شده به کاربر</small
           >
         </div>
       </div>
       <div class="col-md-9">
-        <div class="form-group">
-          <label>Field Name</label>
+        <div class="form-group my-3">
+          <label>نام فیلد</label>
           <input type="text" class="form-control" v-model.lazy="field.name" />
-          <small class="form-text text-muted">Field name</small>
+          <small class="form-text text-muted">نام فیلد</small>
         </div>
       </div>
 
       <div class="col-md-12">
         <div class="form-group">
-          <label>Field Description</label>
+          <label>توصیف فیلد</label>
           <input
             type="text"
             class="form-control"
             v-model.lazy="field.description"
           />
           <small id="emailHelp" class="form-text text-muted"
-            >Field Description</small
+            >توصیف فیلد</small
           >
         </div>
       </div>
@@ -57,7 +57,7 @@
               type="checkbox"
               v-model.lazy="field.editable"
             />
-            Editable by user in profile
+            قابل ویرایش توسط کاربر در پروفایل
           </label>
         </div>
         <div class="form-check">
@@ -67,7 +67,7 @@
               type="checkbox"
               v-model.lazy="field.required"
             />
-            Required on registration
+            الزامی در ثبت نام
           </label>
         </div>
         <div class="form-check">
@@ -77,7 +77,7 @@
               type="checkbox"
               v-model.lazy="field.public"
             />
-            Shown on public profile
+            نمایش در پروفایل عمومی
           </label>
         </div>
       </div>
@@ -86,13 +86,15 @@
     <div class="row pb-3">
       <div class="col-md-12">
         <div class="d-block">
-          <button
-            class="btn btn-sm btn-success btn-outlined float-right"
-            type="button"
-            @click="saveField()"
-          >
-            Save
-          </button>
+          <div class="form-group my-3">
+            <button
+              class="btn btn btn-success btn-outlined float-right"
+              type="button"
+              @click="saveField()"
+            >
+              ذخیره
+            </button>
+          </div>
         </div>
       </div>
     </div>

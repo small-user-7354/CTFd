@@ -1,0 +1,1 @@
+import{$ as t,u as f}from"./main-C_QlMNZg.js";function s(e){e.preventDefault(),f({title:"CTF را دوباره تنظیم کنید؟",body:"آیا مطمئن هستید که می‌خواهید نمونه CTFd خود را بازنشانی کنید؟",success:function(){t("#reset-ctf-form").off("submit").submit()}})}t(()=>{t("#reset-ctf-form").submit(s)});

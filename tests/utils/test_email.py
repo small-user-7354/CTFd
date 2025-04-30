@@ -228,11 +228,11 @@ def test_successful_registration_email(mock_smtp):
 
         successful_registration_notification(to_addr)
 
-        msg = "You've successfully registered for CTFd!"
+        msg = "ثبت‌نام موفقیت آمیز بود."
 
         email_msg = EmailMessage()
         email_msg.set_content(msg)
-        email_msg["Subject"] = "Successfully registered for {ctf_name}".format(
+        email_msg["Subject"] = "با موفقیت در {ctf_name} ثبت نام شد".format(
             ctf_name=ctf_name
         )
         email_msg["From"] = from_addr

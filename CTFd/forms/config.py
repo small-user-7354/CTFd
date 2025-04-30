@@ -16,167 +16,167 @@ from CTFd.utils.csv import get_dumpable_tables
 
 class ResetInstanceForm(BaseForm):
     accounts = BooleanField(
-        "Accounts",
-        description="Deletes all user and team accounts and their associated information",
+        "حساب‌ها",
+        description="تمام حساب‌های کاربری و تیمی و اطلاعات مرتبط با آنها را حذف می‌کند.",
     )
     submissions = BooleanField(
-        "Submissions",
-        description="Deletes all records that accounts gained points or took an action",
+        "ارسال‌ها",
+        description="تمام رکوردهایی که حساب‌ها امتیاز کسب کرده‌اند یا اقدامی انجام داده‌اند را حذف می‌کند",
     )
     challenges = BooleanField(
-        "Challenges", description="Deletes all challenges and associated data"
+        "چالش‌ها", description="تمام چالش‌ها و داده‌های مرتبط را حذف می‌کند"
     )
     pages = BooleanField(
-        "Pages", description="Deletes all pages and their associated files"
+        "Pages", description="تمام صفحات و فایل‌های مرتبط با آنها را حذف می‌کند"
     )
     notifications = BooleanField(
-        "Notifications", description="Deletes all notifications"
+        "اعلان‌ها", description="همه اعلان‌ها را حذف می‌کند"
     )
-    submit = SubmitField("Reset CTF")
+    submit = SubmitField("تنظیم مجدد CTF")
 
 
 class AccountSettingsForm(BaseForm):
     domain_whitelist = StringField(
-        "Email Domain Allowlist",
-        description="Comma-seperated list of allowable email domains which users can register under (e.g. examplectf.com, example.com, *.example.com)",
+        "لیست مجاز دامنه ایمیل",
+        description="فهرست دامنه‌های ایمیل مجاز که کاربران می‌توانند تحت آنها ثبت نام کنند (مثلاً examplectf.com، example.com، *.example.com) با کاما از هم جدا شده‌اند.",
     )
     domain_blacklist = StringField(
-        "Email Domain Blocklist",
-        description="Comma-seperated list of disallowed email domains which users cannot register under (e.g. examplectf.com, example.com, *.example.com)",
+        "لیست مسدود شده دامنه ایمیل",
+        description="فهرست جدا شده با کاما از دامنه‌های ایمیل غیرمجاز که کاربران نمی‌توانند تحت آنها ثبت نام کنند (مثلاً examplectf.com، example.com، *.example.com)",
     )
     team_creation = SelectField(
-        "Team Creation",
-        description="Control whether users can create their own teams (Teams mode only)",
-        choices=[("true", "Enabled"), ("false", "Disabled")],
+        "ایجاد تیم",
+        description="کنترل اینکه آیا کاربران می‌توانند تیم‌های خود را ایجاد کنند یا خیر (فقط حالت تیم‌ها)",
+        choices=[("true", "فعال‌شده"), ("false", "غیرفعا‌ل‌شده")],
         default="true",
     )
     team_size = IntegerField(
         widget=NumberInput(min=0),
-        description="Maximum number of users per team (Teams mode only)",
+        description="حداکثر تعداد کاربران در هر تیم (فقط حالت تیمی)",
     )
     num_teams = IntegerField(
-        "Maximum Number of Teams",
+        "حداکثر تعداد تیم‌ها",
         widget=NumberInput(min=0),
-        description="Maximum number of teams allowed to register with this CTF (Teams mode only)",
+        description="حداکثر تعداد تیم‌های مجاز برای ثبت نام در این CTF (فقط در حالت تیمی)",
     )
     num_users = IntegerField(
-        "Maximum Number of Users",
+        "حداکثر تعداد کاربران",
         widget=NumberInput(min=0),
-        description="Maximum number of user accounts allowed to register with this CTF",
+        description="حداکثر تعداد حساب‌های کاربری مجاز برای ثبت نام در این CTF",
     )
     verify_emails = SelectField(
-        "Verify Emails",
-        description="Control whether users must confirm their email addresses before playing",
-        choices=[("true", "Enabled"), ("false", "Disabled")],
+        "ایمیل‌ها را تأیید کنید",
+        description="کنترل کنید که آیا کاربران قبل از بازی باید آدرس ایمیل خود را تأیید کنند یا خیر",
+        choices=[("true", "فعال"), ("false", "غیرفعال")],
         default="false",
     )
     team_disbanding = SelectField(
-        "Team Disbanding",
-        description="Control whether team captains are allowed to disband their own teams",
+        "انحلال تیم",
+        description="کنترل کنید که آیا کاپیتان‌های تیم اجازه دارند تیم‌های خود را منحل کنند یا خیر",
         choices=[
-            ("inactive_only", "Enabled for Inactive Teams"),
-            ("disabled", "Disabled"),
+            ("inactive_only", "برای تیم‌های غیرفعال فعال شده است"),
+            ("disabled", "غیرفعال"),
         ],
         default="inactive_only",
     )
     name_changes = SelectField(
-        "Name Changes",
-        description="Control whether users and teams can change their names",
-        choices=[("true", "Enabled"), ("false", "Disabled")],
+        "تغییر نام",
+        description="کنترل اینکه آیا کاربران و تیم‌ها می‌توانند نام خود را تغییر دهند یا خیر",
+        choices=[("true", "فعال"), ("false", "غیرفعال")],
         default="true",
     )
     incorrect_submissions_per_min = IntegerField(
-        "Incorrect Submissions per Minute",
+        "ارسال‌های نادرست در هر دقیقه",
         widget=NumberInput(min=1),
-        description="Number of submissions allowed per minute for flag bruteforce protection (default: 10)",
+        description="تعداد ارسال‌های مجاز در هر دقیقه برای محافظت در برابر حمله‌ی بروت‌فورس (پیش‌فرض: ۱۰)",
     )
 
-    submit = SubmitField("Update")
+    submit = SubmitField("به‌روز‌رسانی")
 
 
 class ExportCSVForm(BaseForm):
-    table = SelectField("Database Table", choices=get_dumpable_tables())
-    submit = SubmitField("Download CSV")
+    table = SelectField("جدول پایگاه داده", choices=get_dumpable_tables())
+    submit = SubmitField("دانلود CSV")
 
 
 class ImportCSVForm(BaseForm):
     csv_type = SelectField(
-        "CSV Type",
-        choices=[("users", "Users"), ("teams", "Teams"), ("challenges", "Challenges")],
-        description="Type of CSV data",
+        "نوع CSV",
+        choices=[("users", "کاربران"), ("teams", "تیم‌ها"), ("challenges", "چالش‌ها")],
+        description="نوع دیتا csv",
     )
-    csv_file = FileField("CSV File", description="CSV file contents")
+    csv_file = FileField("فایل CSV", description="محتوای فایل CSV")
 
 
 class SocialSettingsForm(BaseForm):
     social_shares = SelectField(
-        "Social Shares",
-        description="Enable or Disable social sharing links for challenge solves",
-        choices=[("true", "Enabled"), ("false", "Disabled")],
+        "اشتراک‌گذاری‌های اجتماعی",
+        description="فعال یا غیرفعال کردن لینک‌های اشتراک‌گذاری اجتماعی برای حل چالش‌ها",
+        choices=[("true", "فعال"), ("false", "غیرفعال")],
         default="true",
     )
-    submit = SubmitField("Update")
+    submit = SubmitField("به‌روز‌رسانی")
 
 
 class LegalSettingsForm(BaseForm):
     tos_url = URLField(
-        "Terms of Service URL",
-        description="External URL to a Terms of Service document hosted elsewhere",
+        "آدرس اینترنتی شرایط خدمات",
+        description="آدرس اینترنتی خارجی به سند شرایط خدمات که در جای دیگری میزبانی شده است",
     )
     tos_text = TextAreaField(
-        "Terms of Service",
-        description="Text shown on the Terms of Service page",
+        "شرایط خدمات",
+        description="متن نمایش داده شده در صفحه شرایط خدمات",
     )
     privacy_url = URLField(
-        "Privacy Policy URL",
-        description="External URL to a Privacy Policy document hosted elsewhere",
+        "آدرس اینترنتی سیاست حفظ حریم خصوصی",
+        description="آدرس اینترنتی خارجی به یک سند سیاست حفظ حریم خصوصی که در جای دیگری میزبانی شده است",
     )
     privacy_text = TextAreaField(
-        "Privacy Policy",
-        description="Text shown on the Privacy Policy page",
+        "سیاست حفظ حریم خصوصی",
+        description="متن نمایش داده شده در صفحه سیاست حفظ حریم خصوصی",
     )
-    submit = SubmitField("Update")
+    submit = SubmitField("به‌روز رسانی")
 
 
 class VisibilitySettingsForm(BaseForm):
     challenge_visibility = SelectField(
-        "Challenge Visibility",
-        description="Control whether users must be logged in to see challenges",
+        "دیده‌شدن چالش‌ها",
+        description="کنترل کنید که آیا کاربران برای دیدن چالش‌ها باید وارد سیستم شوند یا خیر",
         choices=[
-            (ChallengeVisibilityTypes.PUBLIC, "Public"),
-            (ChallengeVisibilityTypes.PRIVATE, "Private"),
-            (ChallengeVisibilityTypes.ADMINS, "Admins Only"),
+            (ChallengeVisibilityTypes.PUBLIC, "عمومی"),
+            (ChallengeVisibilityTypes.PRIVATE, "خصوصی"),
+            (ChallengeVisibilityTypes.ADMINS, "فقط ادمین‌ها "),
         ],
         default=ChallengeVisibilityTypes.PRIVATE,
     )
     account_visibility = SelectField(
-        "Account Visibility",
-        description="Control whether accounts (users & teams) are shown to everyone, only to authenticated users, or only to admins",
+        "قابلیت دیده شدن اکانت",
+        description="کنترل کنید که آیا حساب‌ها (کاربران و تیم‌ها) به همه، فقط به کاربران احراز هویت شده یا فقط به مدیران نمایش داده شوند",
         choices=[
-            (AccountVisibilityTypes.PUBLIC, "Public"),
-            (AccountVisibilityTypes.PRIVATE, "Private"),
-            (AccountVisibilityTypes.ADMINS, "Admins Only"),
+            (AccountVisibilityTypes.PUBLIC, "عمومی"),
+            (AccountVisibilityTypes.PRIVATE, "خصوصی"),
+            (AccountVisibilityTypes.ADMINS, "فقط ادمین‌ها"),
         ],
         default=AccountVisibilityTypes.PUBLIC,
     )
     score_visibility = SelectField(
-        "Score Visibility",
-        description="Control whether solves/score are shown to the public, to logged in users, hidden to all non-admins, or only shown to admins",
+        "قابلیت دیدن امتیازات",
+        description="کنترل کنید که آیا حل‌ها/امتیازات برای عموم نمایش داده شود، برای کاربران وارد شده، برای همه غیر مدیران پنهان باشد، یا فقط برای مدیران نمایش داده شود",
         choices=[
-            (ScoreVisibilityTypes.PUBLIC, "Public"),
-            (ScoreVisibilityTypes.PRIVATE, "Private"),
-            (ScoreVisibilityTypes.HIDDEN, "Hidden"),
-            (ScoreVisibilityTypes.ADMINS, "Admins Only"),
+            (ScoreVisibilityTypes.PUBLIC, "عمومی"),
+            (ScoreVisibilityTypes.PRIVATE, "خصوصی"),
+            (ScoreVisibilityTypes.HIDDEN, "پنهان"),
+            (ScoreVisibilityTypes.ADMINS, "فقط ادمین‌ها "),
         ],
         default=ScoreVisibilityTypes.PUBLIC,
     )
     registration_visibility = SelectField(
-        "Registration Visibility",
-        description="Control whether registration is enabled for everyone or disabled",
+        "دیده‌شدن ثبت‌نام‌ها",
+        description="کنترل کنید که آیا ثبت نام برای همه فعال است یا غیرفعال",
         choices=[
-            (RegistrationVisibilityTypes.PUBLIC, "Public"),
-            (RegistrationVisibilityTypes.PRIVATE, "Private"),
-            (RegistrationVisibilityTypes.MLC, "MajorLeagueCyber Only"),
+            (RegistrationVisibilityTypes.PUBLIC, "عمومی"),
+            (RegistrationVisibilityTypes.PRIVATE, "خصوصی"),
+            (RegistrationVisibilityTypes.MLC, "MajorLeagueCyber فقط"),
         ],
         default=RegistrationVisibilityTypes.PUBLIC,
     )
@@ -184,7 +184,7 @@ class VisibilitySettingsForm(BaseForm):
 
 class LocalizationForm(BaseForm):
     default_locale = SelectField(
-        "Default Language",
-        description="Language to use if a user does not specify a language in their account settings. By default, CTFd will auto-detect the user's preferred language.",
+        "زبان پیشفرض",
+        description="زبانی که در صورت عدم تعیین زبان توسط کاربر در تنظیمات حساب کاربری، مورد استفاده قرار می‌گیرد. به طور پیش‌فرض، CTFd به طور خودکار زبان مورد نظر کاربر را تشخیص می‌دهد.",
         choices=SELECT_LANGUAGE_LIST,
     )
