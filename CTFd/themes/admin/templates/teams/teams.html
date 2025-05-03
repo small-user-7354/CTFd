@@ -4,9 +4,9 @@
 {% endblock %}
 
 {% block content %}
-<div class="jumbotron">
+<div class="jumbotron my-5">
 	<div class="container">
-		<h1>Teams
+		<h1>تیم‌ها
 			<span class="create-team" role="button" data-toggle="tooltip" title="Create Team">
 				<a href="{{ url_for('admin.teams_new') }}" style="color: inherit;">
 					<i class="btn-fa fas fa-plus-circle"></i>
@@ -21,10 +21,10 @@
 		<div class="col-md-12">
 			{% if q and field %}
 			<h5 class="text-muted text-center">
-				Searching for teams with <strong>{{ field }}</strong> matching <strong>{{ q }}</strong>
+				 در حال جستجوی <strong>{{ field }}</strong> مطابق <strong>{{ q }}</strong>
 			</h5>
 			<h6 class="text-muted text-center pb-3">
-				Page {{ teams.page }} of {{ teams.total }} results
+				Page {{ teams.page }} of {{ teams.total }} نتیجه
 			</h6>
 			{% endif %}
 
@@ -34,7 +34,7 @@
 					{{ form.field(class="form-control custom-select w-100") }}
 				</div>
 				<div class="form-group col-md-8">
-					{{ form.q(class="form-control w-100", placeholder="Search for matching teams") }}
+					{{ form.q(class="form-control w-100", placeholder="جستجوی تیم‌ها") }}
 				</div>
 				<div class="form-group col-md-2">
 					<button type="submit" class="btn btn-primary w-100">
@@ -52,10 +52,10 @@
 		<div class="col-md-12">
 			<div class="float-right pb-3">
 				<div class="btn-group" role="group">
-					<button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" title="Edit Teams" id="teams-edit-button">
+					<button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" title="ویرایش تیم" id="teams-edit-button">
 						<i class="btn-fa fas fa-pencil-alt"></i>
 					</button>
-					<button type="button" class="btn btn-outline-danger" data-toggle="tooltip" title="Delete Teams" id="teams-delete-button">
+					<button type="button" class="btn btn-outline-danger" data-toggle="tooltip" title="حذف تیم" id="teams-delete-button">
 						<i class="btn-fa fas fa-trash-alt"></i>
 					</button>
 				</div>
@@ -74,10 +74,10 @@
 							</div>
 						</th>
 						<th class="sort-col text-center"><b>ID</b></th>
-						<th class="sort-col text-left"><b>Team</b></th>
-						<th class="sort-col text-center"><b>Country</b></th>
-						<th class="sort-col text-center px-0"><b>Hidden</b></th>
-						<th class="sort-col text-center px-0"><b>Banned</b></th>
+						<th class="sort-col text-left"><b>تیم</b></th>
+						<th class="sort-col text-center"><b>کشور</b></th>
+						<th class="sort-col text-center px-0"><b>پنهان شده</b></th>
+						<th class="sort-col text-center px-0"><b>بن شده</b></th>
 					</tr>
 				</thead>
 				<tbody>

@@ -35,28 +35,28 @@ function bulkEditTeams(_event) {
   });
 
   ezAlert({
-    title: "Edit Teams",
+    title: "ویرایش تیم",
     body: $(`
     <form id="teams-bulk-edit">
-      <div class="form-group">
-        <label>Banned</label>
+      <div class="form-group my-3">
+        <label>بن شده</label>
         <select name="banned" data-initial="">
           <option value="">--</option>
-          <option value="true">True</option>
-          <option value="false">False</option>
+          <option value="true">بله</option>
+          <option value="false">خیر</option>
         </select>
       </div>
-      <div class="form-group">
-        <label>Hidden</label>
+      <div class="form-group my-3">
+        <label>پنهان</label>
         <select name="hidden" data-initial="">
           <option value="">--</option>
-          <option value="true">True</option>
-          <option value="false">False</option>
+          <option value="true">بله</option>
+          <option value="false">خیر</option>
         </select>
       </div>
     </form>
     `),
-    button: "Submit",
+    button: "ارسال",
     success: function () {
       let data = $("#teams-bulk-edit").serializeJSON(true);
       const reqs = [];
