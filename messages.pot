@@ -477,20 +477,20 @@ msgstr ""
 
 #: CTFd/themes/core-beta/templates/scoreboard.html:60
 msgid "Scoreboard is empty"
-msgstr ""
+msgstr "جدول امتیازات خالی است"
 
 #: CTFd/themes/core-beta/templates/components/navbar.html:124
 #: CTFd/themes/core-beta/templates/components/navbar.html:129
 #: CTFd/themes/core-beta/templates/settings.html:8
 #: CTFd/themes/core-beta/templates/setup.html:50
 msgid "Settings"
-msgstr ""
+msgstr "تنظیمات"
 
 #: CTFd/themes/core-beta/templates/components/navbar.html:112
 #: CTFd/themes/core-beta/templates/components/navbar.html:117
 #: CTFd/themes/core-beta/templates/settings.html:21
 msgid "Profile"
-msgstr ""
+msgstr "پروفایل"
 
 #: CTFd/themes/core-beta/templates/settings.html:26
 msgid "Access Tokens"
@@ -498,7 +498,7 @@ msgstr ""
 
 #: CTFd/themes/core-beta/templates/settings.html:95
 msgid "Your profile has been updated"
-msgstr ""
+msgstr "پروفایل شما به روز رسانی شد"
 
 #: CTFd/themes/core-beta/templates/settings.html:103
 #: CTFd/themes/core-beta/templates/teams/private.html:83
@@ -528,11 +528,11 @@ msgstr ""
 
 #: CTFd/themes/core-beta/templates/settings.html:224
 msgid "Created"
-msgstr ""
+msgstr "ساخته شد"
 
 #: CTFd/themes/core-beta/templates/settings.html:226
 msgid "Description"
-msgstr ""
+msgstr "توضیحات"
 
 #: CTFd/themes/core-beta/templates/settings.html:227
 msgid "Delete"
@@ -540,7 +540,7 @@ msgstr ""
 
 #: CTFd/themes/core-beta/templates/setup.html:24
 msgid "Setup"
-msgstr ""
+msgstr "ستاپ"
 
 #: CTFd/themes/core-beta/templates/setup.html:44
 msgid "General"
