@@ -108,19 +108,19 @@ msgstr ""
 
 #: CTFd/forms/setup.py:29
 msgid "The name of your CTF event/workshop"
-msgstr ""
+msgstr "نام رویداد/کارگاه CTF شما"
 
 #: CTFd/forms/setup.py:32
 msgid "Event Description"
-msgstr ""
+msgstr "توصیف رویداد"
 
 #: CTFd/forms/setup.py:32
 msgid "Description for the CTF"
-msgstr ""
+msgstr "توصیف مسابقه شما"
 
 #: CTFd/forms/setup.py:35 CTFd/forms/setup.py:36
 msgid "User Mode"
-msgstr ""
+msgstr "حالت کاربری"
 
 #: CTFd/forms/setup.py:36
 msgid "Team Mode"
@@ -142,19 +142,19 @@ msgstr ""
 
 #: CTFd/forms/setup.py:50
 msgid "Admin Email"
-msgstr ""
+msgstr "ایمیل ادمین"
 
 #: CTFd/forms/setup.py:51
 msgid "Your email address for the administration account"
-msgstr ""
+msgstr "آدرس ایمیل شما برای حساب مدیریت"
 
 #: CTFd/forms/setup.py:55
 msgid "Admin Password"
-msgstr ""
+msgstr "پسورد ادمین"
 
 #: CTFd/forms/setup.py:56
 msgid "Your password for the administration account"
-msgstr ""
+msgstr "رمز عبور شما برای حساب کاربری مدیریت"
 
 #: CTFd/forms/setup.py:61
 msgid "Logo"
@@ -552,7 +552,7 @@ msgstr ""
 
 #: CTFd/themes/core-beta/templates/setup.html:53
 msgid "Administration"
-msgstr "" 
+msgstr "مدیریت" 
 
 #: CTFd/themes/core-beta/templates/setup.html:56
 msgid "Style"
@@ -560,11 +560,11 @@ msgstr ""
 
 #: CTFd/themes/core-beta/templates/setup.html:59
 msgid "Date &amp; Time"
-msgstr ""
+msgstr "تاریخ و زمان"
 
 #: CTFd/themes/core-beta/templates/setup.html:62
 msgid "Integrations"
-msgstr ""
+msgstr "یکپارچگی‌ها"
 
 #: CTFd/themes/core-beta/templates/setup.html:86
 #: CTFd/themes/core-beta/templates/setup.html:138
@@ -573,7 +573,7 @@ msgstr ""
 #: CTFd/themes/core-beta/templates/setup.html:296
 #: CTFd/themes/core-beta/templates/setup.html:345
 msgid "Next"
-msgstr ""
+msgstr "بعدی"
 
 #: CTFd/themes/core-beta/templates/setup.html:112
 msgid "Participants register accounts and form teams"
@@ -828,7 +828,7 @@ msgstr ""
 
 #: CTFd/themes/core-beta/templates/teams/team_enrollment.html:14
 msgid "In order to participate you must either join or create a team."
-msgstr ""
+msgstr "برای شرکت در این مسابقه باید عضو شوید یا یک تیم تشکیل دهید."
 
 #: CTFd/themes/core-beta/templates/teams/team_enrollment.html:22
 msgid "Play with Official Team"

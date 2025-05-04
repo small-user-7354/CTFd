@@ -88,63 +88,63 @@ class SetupForm(BaseForm):
     )
 
     verify_emails = SelectField(
-        _l("Verify Emails"),
-        description="Control whether users must confirm their email addresses before participating",
-        choices=[("true", "Enabled"), ("false", "Disabled")],
+        _l("تایید ایمیل"),
+        description="کنترل کنید که آیا کاربران قبل از شرکت در نظرسنجی باید آدرس ایمیل خود را تأیید کنند یا خیر",
+        choices=[("true", "فعال"), ("false", "غیرفعال")],
         default="false",
     )
     team_size = IntegerField(
         widget=NumberInput(min=0),
-        description="Amount of users per team (Teams mode only) Optional.",
+        description="تعداد کاربران در هر تیم (فقط حالت تیمی) اختیاری.",
     )
     challenge_visibility = SelectField(
-        "Challenge Visibility",
-        description="Control whether users must be logged in to see challenges",
+        "قابلیت دیده‌شدن چالش",
+        description="کنترل کنید که آیا کاربران برای دیدن چالش‌ها باید وارد سیستم شوند یا خیر",
         choices=[
-            (ChallengeVisibilityTypes.PUBLIC, "Public"),
-            (ChallengeVisibilityTypes.PRIVATE, "Private"),
-            (ChallengeVisibilityTypes.ADMINS, "Admins Only"),
+            (ChallengeVisibilityTypes.PUBLIC, "عمومی"),
+            (ChallengeVisibilityTypes.PRIVATE, "خصوصی"),
+            (ChallengeVisibilityTypes.ADMINS, "فقط ادمین‌ها"),
         ],
         default=ChallengeVisibilityTypes.PRIVATE,
     )
     account_visibility = SelectField(
-        "Account Visibility",
-        description="Control whether accounts (users & teams) are shown to everyone, only to authenticated users, or only to admins",
+        "قابلیت دیده‌شدن حساب",
+        description="کنترل کنید که آیا حساب‌ها (کاربران و تیم‌ها) به همه، فقط به کاربران احراز هویت شده یا فقط به مدیران نمایش داده شوند.",
         choices=[
-            (AccountVisibilityTypes.PUBLIC, "Public"),
-            (AccountVisibilityTypes.PRIVATE, "Private"),
-            (AccountVisibilityTypes.ADMINS, "Admins Only"),
+            (AccountVisibilityTypes.PUBLIC, "عمومی"),
+            (AccountVisibilityTypes.PRIVATE, "خصوصی"),
+            (AccountVisibilityTypes.ADMINS, "فقط ادمین‌ها"),
         ],
         default=AccountVisibilityTypes.PUBLIC,
     )
     score_visibility = SelectField(
-        "Score Visibility",
-        description="Control whether solves/score are shown to the public, to logged in users, hidden to all non-admins, or only shown to admins",
+        "قابلیت مشاهده امتیاز",
+        description="کنترل کنید که آیا حل‌ها/امتیازات برای عموم نمایش داده شود، برای کاربران وارد شده، برای همه غیر مدیران پنهان باشد، یا فقط برای مدیران نمایش داده شود",
         choices=[
-            (ScoreVisibilityTypes.PUBLIC, "Public"),
-            (ScoreVisibilityTypes.PRIVATE, "Private"),
-            (ScoreVisibilityTypes.HIDDEN, "Hidden"),
-            (ScoreVisibilityTypes.ADMINS, "Admins Only"),
+            (ScoreVisibilityTypes.PUBLIC, "عمومی"),
+            (ScoreVisibilityTypes.PRIVATE, "خصوصی"),
+            (ScoreVisibilityTypes.HIDDEN, "پنهان"),
+            (ScoreVisibilityTypes.ADMINS, "فقط ادمین‌ها"),
         ],
         default=AccountVisibilityTypes.PUBLIC,
     )
     registration_visibility = SelectField(
-        "Registration Visibility",
-        description="Control whether registration is enabled for everyone or disabled",
+        "قابلیت مشاهده ثبت نام",
+        description="کنترل کنید که آیا ثبت نام برای همه فعال است یا غیرفعال",
         choices=[
-            (RegistrationVisibilityTypes.PUBLIC, "Public"),
-            (RegistrationVisibilityTypes.PRIVATE, "Private"),
-            (RegistrationVisibilityTypes.MLC, "MajorLeagueCyber Only"),
+            (RegistrationVisibilityTypes.PUBLIC, "عمومی"),
+            (RegistrationVisibilityTypes.PRIVATE, "خصوصی"),
+            (RegistrationVisibilityTypes.MLC, "MajorLeagueCyber فقط"),
         ],
         default=RegistrationVisibilityTypes.PUBLIC,
     )
 
     start = StringField(
-        _l("Start Time"),
-        description=_l("Time when your CTF is scheduled to start. Optional."),
+        _l("زمان شروع"),
+        description=_l("زمان شروع CTF شما (اختیاری)"),
     )
     end = StringField(
-        _l("End Time"),
-        description=_l("Time when your CTF is scheduled to end. Optional."),
+        _l("زمان پایان"),
+        description=_l("زمان پایان CTF شما (اختیاری)"),
     )
     submit = SubmitField(_l("Finish"))

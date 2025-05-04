@@ -82,7 +82,7 @@ msgstr "زمان انقضا"
 
 #: CTFd/forms/self.py:54
 msgid "Generate"
-msgstr "تولید کردن"
+msgstr "ایجاد"
 
 #: CTFd/forms/setup.py:29
 msgid "Event Name"
@@ -381,7 +381,7 @@ msgstr "نام کاربری شما در سایت"
 
 #: CTFd/themes/core-beta/templates/register.html:43
 msgid "Never shown to the public"
-msgstr "هرگز به عموم نشان داده نشده است"
+msgstr "هرگز به عموم نشان داده نشود"
 
 #: CTFd/themes/core-beta/templates/register.html:51
 msgid "Password used to log into your account"
@@ -462,7 +462,7 @@ msgstr "تنظیمات اولیه"
 
 #: CTFd/themes/core-beta/templates/setup.html:44
 msgid "General"
-msgstr "تولید کردن"
+msgstr "عمومی"
 
 #: CTFd/themes/core-beta/templates/setup.html:47
 msgid "Mode"

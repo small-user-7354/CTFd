@@ -12,6 +12,35 @@
 	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/rtl.css') }}">
 	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/fonts.css') }}">
 	{% block stylesheets %}
+    {{ Assets.css("assets/scss/main.scss") }}
+    <style>
+      
+      @font-face {
+        font-family: 'Vazir-Bold';
+        src: url('themes/core-beta/static/webfonts/Vazir-Bold.woff2') format('woff2');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Vazir';
+        src: url('themes/core-beta/static/webfonts/Vazirmatn-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body, p, a, h3, h4, h5, h6, li, span, b, small, form, 
+        input, label, td, button, textarea, select, option, div, button {
+        font-family: "Vazir", sans-serif;
+      }
+
+      h1, h2, strong, th{
+        font-family: "Vazir-Bold", sans-serif;
+      }
+
+    </style>
 	{% endblock %}
 
 	{{ Plugins.styles }}

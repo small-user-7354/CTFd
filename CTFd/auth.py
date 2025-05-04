@@ -229,7 +229,7 @@ def register():
                 registration_code.lower()
                 != str(get_config("registration_code", default="")).lower()
             ):
-                errors.append("The registration code you entered was incorrect")
+                errors.append("کد Registration اشتباه است. ")
 
         # Process additional user fields
         fields = {}
@@ -240,7 +240,7 @@ def register():
         for field_id, field in fields.items():
             value = request.form.get(f"fields[{field_id}]", "").strip()
             if field.required is True and (value is None or value == ""):
-                errors.append("Please provide all required fields")
+                errors.append("لطفا همه فیلد‌ها را پر کنید.")
                 break
 
             if field.field_type == "boolean":
