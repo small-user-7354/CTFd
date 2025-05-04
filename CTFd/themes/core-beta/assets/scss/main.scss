@@ -1,6 +1,9 @@
 @use "bootstrap/scss/bootstrap" as * with (
   $info: #5c728f
 );
+// @use "@rtlcss/bootstrap/scss/bootstrap.rtl" as * with (
+//   $info: #5c728f
+// );
 
 @use "includes/components/table";
 @use "includes/components/jumbotron";
@@ -17,6 +20,28 @@
 @use "includes/icons/award-icons";
 @use "includes/icons/flag-icons";
 
+@font-face {
+  font-family: 'Vazir';
+  src: url('../../static/webfonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazir-Bold';
+  src: url('../../static/webfonts/Vazir-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+
 h1,
 h2 {
   font-weight: 500;
@@ -28,7 +53,7 @@ a {
 }
 
 blockquote {
-  border-left: 4px solid $secondary;
+  border-left: 4px solid black;
   padding-left: 15px;
 }
 
@@ -36,6 +61,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Vazir", sans-serif;
+}
+
+body {
+  font-family: "Vazir", sans-serif;
 }
 
 .dropdown-menu {

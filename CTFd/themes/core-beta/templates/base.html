@@ -13,6 +13,33 @@
 
   {% block stylesheets %}
     {{ Assets.css("assets/scss/main.scss") }}
+    <style>
+      
+      @font-face {
+        font-family: 'Vazir-Bold';
+        src: url('themes/core-beta/static/webfonts/Vazir-Bold.woff2') format('woff2');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Vazir';
+        src: url('themes/core-beta/static/webfonts/Vazirmatn-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body, p, a {
+        font-family: "Vazir", sans-serif;
+      }
+
+      h1, h2{
+        font-family: "Vazir-Bold", sans-serif;
+      }
+
+    </style>
   {% endblock %}
 
   {{ Plugins.styles }}
