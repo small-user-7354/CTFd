@@ -556,7 +556,7 @@ msgstr "مدیریت"
 
 #: CTFd/themes/core-beta/templates/setup.html:56
 msgid "Style"
-msgstr ""
+msgstr "استایل"
 
 #: CTFd/themes/core-beta/templates/setup.html:59
 msgid "Date &amp; Time"

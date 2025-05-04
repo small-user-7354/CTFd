@@ -27,7 +27,7 @@ class Languages(str, RawEnum):
 
 
 LANGUAGE_NAMES = {
-    "en": "English",
+    # "en": "English",
     # "de": "Deutsch",
     # "pl": "Polski",
     # "es": "Español",

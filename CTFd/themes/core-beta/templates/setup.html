@@ -190,7 +190,7 @@
 						</div>
 
 						<div class="mb-3">
-							<b>{{ form.team_size.label }}</b>
+							<b>تعداد نفرات تیم</b>
 							{{ form.team_size(class="form-control custom-select") }}
 							<small class="form-text text-muted">
 								{{ form.team_size.description }}
@@ -310,7 +310,7 @@
 									<input class="form-control" id="start-time" type="time" placeholder="hh:mm" data-preview="#start" @click="processDateTime('start')"/>
 								</div>
 								<div class="col-md-4">
-									<label>UTC Preview</label>
+									<label>{% trans %}UTC Preview{% endtrans %}</label>
 									{{ form.start(class="form-control", id="start-preview", readonly=True) }}
 								</div>
 							</div>

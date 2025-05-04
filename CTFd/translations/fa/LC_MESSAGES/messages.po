@@ -288,7 +288,7 @@ msgstr "جستجوی کاربران تطبیق "
 
 #: CTFd/themes/core-beta/templates/base.html:49
 msgid "Powered by CTFd"
-msgstr "طنین کوثر"
+msgstr "Amin A.Osalou"
 
 #: CTFd/themes/core-beta/templates/challenge.html:11
 #: CTFd/themes/core-beta/templates/teams/private.html:375
@@ -478,7 +478,7 @@ msgstr "استایل"
 
 #: CTFd/themes/core-beta/templates/setup.html:59
 msgid "Date &amp; Time"
-msgstr "زمان &amp; تاریخ"
+msgstr "زمان و تاریخ"
 
 #: CTFd/themes/core-beta/templates/setup.html:62
 msgid "Integrations"
